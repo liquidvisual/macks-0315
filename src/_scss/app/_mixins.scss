@@ -1,0 +1,83 @@
+@import "foundation/settings";
+/*
+    LIQUIDVISUAL MIXINS :: A Personal Framework
+
+    - updated: 01.12.14
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Mixins
+//-----------------------------------------------------------------
+
+@mixin transition($property: false) {
+
+    -webkit-transition: all .15s linear;
+       -moz-transition: all .15s linear;
+         -o-transition: all .15s linear;
+        -ms-transition: all .15s linear;
+            transition: all .15s linear;
+
+    // OPT IN - by passing a specific transition
+    @if $property {
+        -webkit-transition-property: #{$property};
+           -moz-transition-property: #{$property};
+             -o-transition-property: #{$property};
+            -ms-transition-property: #{$property};
+                transition-property: #{$property};
+    }
+
+    // -webkit-transition-property: opacity, color, width, background, transform;
+    //    -moz-transition-property: opacity, color, width, background, transform;
+    //      -o-transition-property: opacity, color, width, background, transform;
+    //     -ms-transition-property: opacity, color, width, background, transform;
+    //         transition-property: opacity, color, width, background, transform;
+}
+
+.transition {
+    @include transition();
+}
+
+//-----------------------------------------------------------------
+// Ellipsis
+//-----------------------------------------------------------------
+
+@mixin truncate($width: 220px) {
+    width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+@mixin hamburger($width: 24px, $gap: 4px, $thickness: 4px, $color: black) {
+    display: block;
+    height: ($thickness + $gap) * 2;
+    cursor: pointer;
+
+    .hamburger-icon,
+    &:after {
+        position: relative;
+        display: block;
+        width: $width;
+        height: $thickness;
+        background: $color;
+    }
+
+    &:after {
+        content: "";
+        top: $gap;
+        box-shadow: 0 $thickness+$gap 0 0 $color;
+    }
+}
+
+html.mm-opening .hamburger:before,
+html.mm-opening .hamburger:after {
+    display: none;
+}
+
+.hamburger {
+    @include hamburger();
+}

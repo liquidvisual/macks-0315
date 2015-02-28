@@ -1,0 +1,63 @@
+@import "foundation/settings";
+/*
+    SIDE-NAV.CSS
+
+    - updated: 04.12.14
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Side Nav
+//-----------------------------------------------------------------
+
+.lv-super .side-nav {
+    padding: rem-calc(0 0 30 0);
+
+    li {
+        margin-bottom: 0;
+        font-size: rem-calc(16);
+
+        a {
+            display: block;
+            line-height: 1.2;
+            padding: rem-calc(18);
+            margin-bottom: 1px;
+            color: white;
+            background: $primary-color;
+        }
+
+        &.active-parent > a {
+            background: lighten($secondary-color, 10%);
+            color: white !important; // refactor
+        }
+
+        &.active > a {
+            background: $secondary-color;
+            color: white !important; // refactor
+        }
+    }
+}
+
+.no-touch .lv-super .side-nav li a:hover {
+    background: darken($primary-color, 10%);
+    color: white;
+}
+
+// Hovers
+.no-touch .lv-super .side-nav li.active a:hover,
+.no-touch .lv-super .side-nav li.active-parent a:hover {
+    background: $secondary-color;
+}
+
+//=========================================
+// Side Nav
+//=========================================
+
+.lv-super .side-nav ul li a {
+    background: lighten($secondary-color, 10%);
+
+    @media #{$large-up} {
+        padding-left: rem-calc(40);
+        padding-right: rem-calc(20);
+    }
+
+}

@@ -1,0 +1,100 @@
+@import "foundation/settings";
+/*
+    FOOTER.CSS
+
+    - Last updated: 28.02.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Global Footer
+//-----------------------------------------------------------------
+
+.global-footer {
+	background: $secondary-color;
+	box-shadow: inset 0px 3px 4px 0px rgba(0,0,0,0.09);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #C2D4D8;
+		margin-bottom: rem-calc(20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Body (Left)
+//-----------------------------------------------------------------
+
+.global-footer-body {
+	padding: rem-calc(50 0);
+
+	a {
+		color: white;
+	}
+
+	.block-list {
+		@media #{$small-only} {
+		    margin-bottom: rem-calc(30);
+		}
+	}
+
+	.social-networks {
+		@media #{$small-only} {
+		    margin-bottom: rem-calc(20);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Block List (Left)
+//-----------------------------------------------------------------
+
+.global-footer-links li {
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	@media #{$large-up} {
+	    a:hover {
+	    	color: $button-bg-hover; // button active state
+	    }
+	}
+}
+
+//-----------------------------------------------------------------
+// Block List
+//-----------------------------------------------------------------
+
+.global-footer-body {
+	.block-list li {
+		border-color: #106A85;
+
+		a {
+			color: #C2D4D8;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Legal
+//-----------------------------------------------------------------
+
+.global-footer-legal {
+    line-height: rem-calc(50);
+    background: darken($secondary-color, 3%);
+
+    .author-logo {
+        display: block;
+        font-size: rem-calc(14);
+        color: rgba(255, 255, 255, .4);
+
+        .text {
+            margin-right: rem-calc(5);
+        }
+    }
+}
+
+//=========================================
+//
+//=========================================

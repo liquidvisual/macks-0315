@@ -1,0 +1,100 @@
+/*
+    LISTS.CSS
+
+    - Last updated: 28.02.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+//-----------------------------------------------------------------
+// Block List
+//-----------------------------------------------------------------
+
+.block-list {
+	list-style: none;
+	margin: 0; // reset
+
+	li {
+		position: relative;
+		border-top: 1px solid #CECECC;
+		border-bottom: 1px solid #CECECC;
+		margin: -1px 0;
+		padding: rem-calc(20 0);
+	}
+
+	a {
+		display: inline-block;
+		max-height: rem-calc(44);
+		padding-right: rem-calc(40);
+		overflow: hidden;
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: rem-calc(15);
+			content: "\f105";
+			font-size: rem-calc(30);
+			font-family: "FontAwesome";
+			line-height: 0;
+		}
+	}
+}
+
+.block-list {
+	@media #{$large-up} {
+	    li:hover a {
+			color: white;
+	    }
+	}
+}
+
+//-----------------------------------------------------------------
+// Block List Contexts
+//-----------------------------------------------------------------
+
+.global-footer .block-list a:after {
+	color: rgba(255, 255, 255, 0.4)
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+ul li {
+	margin-bottom: rem-calc(5);
+}
+
+.triangle-list {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		padding-left: rem-calc(8);
+		margin-bottom: rem-calc(5);
+
+		a:before {
+			content: "\f0da";
+			// content: "\f04b";
+			font-family: "FontAwesome";
+			position: relative;
+			top: 1px;
+			left: -5px;
+			font-size: rem-calc(17);
+			color: $primary-color;
+		}
+	}
+
+	&[class*='block-grid'] li {
+		padding-bottom: 0; // Let list items set their own inner padding
+	}
+}
+
+//=========================================
+// Foundation List Override
+//=========================================
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style: circle;
+}

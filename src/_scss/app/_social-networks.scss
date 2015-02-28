@@ -1,0 +1,32 @@
+/*
+    SOCIAL-NETWORKS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Social Networks
+//-----------------------------------------------------------------
+
+.global-footer .social-networks a {
+	width: rem-calc(40);
+	border: 1px solid white;
+	font-size: rem-calc(25);
+	line-height: rem-calc(40);
+	text-align: center;
+	margin-left: rem-calc(10); // special case
+}
+
+//=========================================
+//
+//=========================================
+
+.global-footer .social-networks a:hover {
+	@media #{$large-up} {
+	    background: white;
+	    color: $secondary-color;
+	}
+}

@@ -1,0 +1,65 @@
+- title: Home
+  url: /
+
+- title: Services
+  url: /services/
+  include_children_in_nav: false
+  children:
+    - title: Our Services
+      url: "#"
+      include_children_in_nav: true
+      children:
+        - title: Corporate Advisory
+          url: "#"
+        - title: "Restructuring & Turnaround"
+          url: "#"
+        - title: Insolvency
+          url: "#"
+        - title: ---
+          url: "#"
+
+    - title: Practical Information
+      url: "#"
+      include_children_in_nav: true
+      children:
+        - title: PPSA
+          url: "#"
+        - title: Practice Pointers
+          url: "#"
+        - title: FAQs
+          url: "#"
+        - title: Newsletters
+          url: "#"
+
+    - title: Industry
+      url: "#"
+      include_children_in_nav: true
+      children:
+        - title: Agribusiness
+          url: "#"
+        - title: Aquaculture
+          url: "#"
+        - title: Automotive
+          url: "#"
+        - title: Beef & Dairy
+          url: "#"
+        - title: Building & Construction
+          url: "#"
+        - title: Transport
+          url: "#"
+        - title: Wine
+          url: "#"
+
+- title: About
+  url: /about/
+  include_children_in_nav: false
+  children:
+    - title: Our Team
+      url: "#"
+    - title: Why Use Us?
+      url: "#"
+    - title: News
+      url: "#"
+
+- title: Contact
+  url: /contact/

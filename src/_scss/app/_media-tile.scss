@@ -1,0 +1,173 @@
+@import "foundation/settings";
+/*
+    MEDIA-TILE.CSS
+
+    - updated: 04.12.14
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media Tile
+//-----------------------------------------------------------------
+
+.media-tile {
+    position: relative;
+    display: block;
+    background: rgba(0,0,0, 0.56);
+    overflow: hidden;
+    min-height: rem-calc(89);
+
+    @media #{$medium-up} {
+        min-height: rem-calc(109);
+    }
+
+    @media #{$large-up} {
+        min-height: rem-calc(138);
+    }
+}
+
+// Hovers
+.no-touch .media-tile:hover {
+    background: rgba(0,0,0, 0.7);
+}
+
+//=========================================
+// Thumbnail
+//=========================================
+
+.media-tile img {
+    width: rem-calc(86);
+
+    @media #{$medium-up} {
+        width: rem-calc(96);
+    }
+
+    @media #{$large-up} {
+        width: rem-calc(122);
+    }
+}
+
+//=========================================
+// Icon Arrow
+//=========================================
+
+.media-tile i {
+    position: absolute;
+    right: rem-calc(15);
+    bottom: rem-calc(10); // needs to line up with text
+    font-size: rem-calc(36);
+    color: #8F969A;
+}
+
+//=========================================
+// Text
+//=========================================
+
+.media-tile .text {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    padding: rem-calc(15 40 15 15);
+
+    color: white;
+    line-height: 1.2;
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: white;
+
+        @media #{$medium-up} {
+            font-size: rem-calc(25);
+        }
+    }
+
+    // Optional
+    .desc {
+        padding-top: rem-calc(5); // special case
+        display: block;
+        font-weight: normal;
+        font-size: rem-calc(10);
+
+        @media #{$medium-up} {
+            font-size: rem-calc(14);
+        }
+    }
+
+    @media #{$large-up} {
+        font-size: rem-calc(20);
+    }
+
+    @media #{$xlarge-up} {
+        font-size: rem-calc(24);
+    }
+}
+
+//=========================================
+// Tagline
+//=========================================
+
+.blog-item .tagline {
+    display: block;
+    color: lighten($body-font-color, 15%);
+    font-size: rem-calc(16);
+    margin-bottom: rem-calc(15);
+}
+
+.blog-item .excerpt a {
+    display: inline-block;
+}
+
+.no-touch .media-tile:hover {
+    // background: darken($midnight, 10%)
+}
+
+.no-touch .media-tile:hover i {
+    color: white;
+}
+
+//=========================================
+// Media Tiles
+//=========================================
+
+.media-tiles-light {
+    .media-tile {
+        background: #EFEFEF;
+
+        .text h2 {
+            color: #404141;
+            font-size: rem-calc(20);
+        }
+
+         .desc {
+            color: #404141;
+         }
+
+        i {
+            color: #C8C7C7;
+        }
+    }
+}
+
+// Not sure why the JS library isn't picking this up
+.no-touch .media-tiles-light .media-tile:hover {
+    background: darken($light-grey, 40%);
+
+    .text h2 {
+        color: white;
+    }
+
+    .desc {
+        color: white;
+    }
+}
+
+/*  Bit of a hack */
+@media (max-width: 767px) {
+    .media-tiles li {
+        width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title: "Macks Advisory - Adelaide"
+title: "Macks Advisory"
+company: "Macks Advisory"
+description: "Macks Advisory is a company in Adelaide"
+
+# Contact Info
+email: info@macksadvisory.com.au
+phone: +618 8231 3323
+fax: +618 8231 3324
+office_address: "Level 11, 99 Gawler Place<br> Adelaide SA 5000"
+postal_address: "GPO Box 2119<br> Adelaide SA 5001"
+
+# Social Networks
+facebook: "https://www.facebook.com/pages/Macks-Advisory/229060230549486"
+linked_in: "http://au.linkedin.com/company/macks-advisory?trk=ppro_cprof"
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"

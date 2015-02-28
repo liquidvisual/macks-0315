@@ -1,0 +1,78 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 28.02.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	position: relative;
+}
+
+//=========================================
+// Logo
+//=========================================
+
+.global-header .logo img {
+	width: rem-calc(197);
+	margin: rem-calc(40 0);
+
+	background: pink;
+
+	@media #{$medium-up} {
+		width: rem-calc(308);
+	}
+	@media #{$large-up} {
+		width: rem-calc(396);
+		margin: rem-calc(130 0 60 0);
+	}
+}
+
+//=========================================
+// Search Form
+//=========================================
+
+.global-header .search-form input {
+	position: absolute;
+	top: rem-calc(20);
+	right: rem-calc(15);
+	width: rem-calc(230);
+	height: rem-calc(26);
+	border-color: #E0E0E0;
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+.global-header-mobile-menu {
+	position: absolute;
+	top: rem-calc(40);
+	right: rem-calc(15);
+}
+
+.hamburger {
+	@include hamburger($width: 24px, $gap: 5px, $thickness: 4px, $color: #211F20);
+
+	@media #{$medium-up} {
+		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
+	}
+}
+
+//=========================================
+// Vertical Center
+//=========================================
+
+// .global-header .lv-vertical-center {
+//     position: relative;
+//     top: 50%; // to account for top margins of H1s
+//     -webkit-transform: translateY(-50%);
+//         -ms-transform: translateY(-50%);
+//             transform: translateY(-50%);
+// }
