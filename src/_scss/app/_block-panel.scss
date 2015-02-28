@@ -74,7 +74,7 @@
     @media #{$large-up}  { @include block-grid(1); }
 
     li {
-        padding-bottom: 0;
+        padding: 0; // counter block-grid
     }
 }
 

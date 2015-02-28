@@ -112,6 +112,10 @@
 			    border-right: 1px solid #DADEDD;
 			    padding-right: rem-calc(30);
 			}
+
+			@media #{$large-up} {
+				margin-right: rem-calc(68); // experimental
+			}
 		}
 	}
 
@@ -141,6 +145,10 @@
 			@media #{$medium-up} {
 			    border-right: 1px solid #DADEDD;
 			    padding: rem-calc(0 30 0 0);
+			}
+
+			@media #{$large-up} {
+				margin-left: rem-calc(-68); // experimental
 			}
 		}
 	}

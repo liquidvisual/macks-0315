@@ -14,7 +14,7 @@
 
 .block-list {
 	list-style: none;
-	margin: 0; // reset
+	margin: 0 !important; // reset
 
 	li {
 		position: relative;
@@ -58,8 +58,19 @@
 	color: rgba(255, 255, 255, 0.4)
 }
 
-.lv-hero .block-list a:after {
-	display: none;
+.lv-hero .block-list li {
+
+	@media #{$medium-only} {
+	    border-bottom: 0;
+	}
+
+	a {
+		max-height: none;
+
+		&:after {
+			display: none;
+		}
+	}
 }
 
 //-----------------------------------------------------------------

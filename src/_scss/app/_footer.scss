@@ -29,6 +29,12 @@
 .global-footer-body {
 	padding: rem-calc(50 0);
 
+	.hack-align {
+		@media #{$large-up} {
+		    margin-right: rem-calc(68);
+		}
+	}
+
 	a {
 		color: white;
 	}
