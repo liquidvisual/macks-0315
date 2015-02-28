@@ -4,7 +4,32 @@ hero_link: /some-link-here/
 ---
 
 {% assign settings = site.data.settings %}
+{% assign promo_practices = site.data.promo_practices %}
 
+<!-- HERO -->
+<div class="lv-hero">
+	<div class="row outer-row">
+		<div class="large-9 columns collapse-right-for-large">
+
+			{% for i in (1..2) %}
+				<div class="row collapse">
+					<div class="medium-7 columns">
+						{% include media_tile_image.html %}
+					</div>
+					<div class="medium-5 columns last">
+						{% include media_tile_image.html %}
+					</div>
+				</div> <!-- .row -->
+			{% endfor %}
+
+		</div> <!-- .columns -->
+		<div class="large-3 columns collapse-left-for-large">
+			{% include blog_panel.html %}
+		</div> <!-- .columns -->
+	</div> <!-- .row -->
+</div> <!-- .lv-hero -->
+
+<!-- THREE PANE FEATURE -->
 <section class="three-pane-feature">
 	<div class="row outer-row">
 		<div class="large-5 columns feature-1">

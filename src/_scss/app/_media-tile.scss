@@ -8,6 +8,9 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$light-grey: grey;
+
 //-----------------------------------------------------------------
 // Media Tile
 //-----------------------------------------------------------------
@@ -15,37 +18,27 @@
 .media-tile {
     position: relative;
     display: block;
-    background: rgba(0,0,0, 0.56);
     overflow: hidden;
-    min-height: rem-calc(89);
+    height: rem-calc(200);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin-bottom: rem-calc(10);
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 
     @media #{$medium-up} {
-        min-height: rem-calc(109);
-    }
-
-    @media #{$large-up} {
-        min-height: rem-calc(138);
+        height: rem-calc(255);
+        margin-right: rem-calc(10);
     }
 }
 
-// Hovers
-.no-touch .media-tile:hover {
-    background: rgba(0,0,0, 0.7);
-}
-
-//=========================================
-// Thumbnail
-//=========================================
-
-.media-tile img {
-    width: rem-calc(86);
-
-    @media #{$medium-up} {
-        width: rem-calc(96);
-    }
-
-    @media #{$large-up} {
-        width: rem-calc(122);
+.last .media-tile {
+    @media #{$devices-only} {
+        margin-right: 0;
     }
 }
 
@@ -58,6 +51,7 @@
     right: rem-calc(15);
     bottom: rem-calc(10); // needs to line up with text
     font-size: rem-calc(36);
+    font-size: rem-calc(45);
     color: #8F969A;
 }
 
@@ -71,17 +65,21 @@
     display: inline-block;
     padding: rem-calc(15 40 15 15);
 
+    background: rgba(0,0,0,0.65);
+    width: 100%;
+
     color: white;
     line-height: 1.2;
 
     h2 {
         font-weight: bold;
-        margin-bottom: 0;
+        margin-bottom: rem-calc(10);
         line-height: 1.2;
         color: white;
+        text-transform: none;
 
         @media #{$medium-up} {
-            font-size: rem-calc(25);
+            font-size: rem-calc(21);
         }
     }
 
@@ -90,7 +88,11 @@
         padding-top: rem-calc(5); // special case
         display: block;
         font-weight: normal;
-        font-size: rem-calc(10);
+        font-size: rem-calc(12);
+
+        max-height: rem-calc(50);
+        // line-height: 2;
+        overflow: hidden;
 
         @media #{$medium-up} {
             font-size: rem-calc(14);

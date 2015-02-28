@@ -1,0 +1,19 @@
+- title: PPSA
+  url: "#"
+  img_path: "/img/content/media-tile-1.png"
+  body: "Smaller text can go here lorem ipsum dolor sit amet"
+
+- title: Title Here
+  url: "#"
+  img_path: "/img/content/media-tile-2.png"
+  body: "Smaller text can go here lorem ipsum dolor sit amet"
+
+- title: Another Title
+  url: "#"
+  img_path: "/img/content/media-tile-3.png"
+  body: "Smaller text can Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nam blanditiis perspiciatis sit et voluptas asperiores autem optio rem unde, recusandae accusantium."
+
+- title: Practice Pointers
+  url: "#"
+  img_path: "/img/content/media-tile-4.png"
+  body: "Smaller text can go here"

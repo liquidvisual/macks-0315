@@ -20,7 +20,7 @@
 		position: relative;
 		border-top: 1px solid #CECECC;
 		border-bottom: 1px solid #CECECC;
-		margin: -1px 0;
+		margin: rem-calc(-1 0 0 0);
 		padding: rem-calc(20 0);
 	}
 
@@ -56,6 +56,10 @@
 
 .global-footer .block-list a:after {
 	color: rgba(255, 255, 255, 0.4)
+}
+
+.lv-hero .block-list a:after {
+	display: none;
 }
 
 //-----------------------------------------------------------------

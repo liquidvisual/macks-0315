@@ -66,6 +66,21 @@ html {
 	}
 }
 
+// Collapse Left Large - used in promo tiles
+.lv-super .collapse-left-for-large {
+	@media #{$large-up} {
+	    padding-left: 0;
+	}
+}
+
+// Collapse Right Large - used in promo tiles
+.lv-super .collapse-right-for-large {
+	@media #{$large-up} {
+	    padding-right: 0;
+	}
+}
+
+// Collapse Large
 .lv-super .collapse-for-large {
 	@media #{$large-up} {
 	    margin: 0;

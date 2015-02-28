@@ -1,16 +1,17 @@
-{% assign stubbed_image_url = "http://placehold.it/244x276" %}
+{% assign stubbed_image_url = item.img_path %}
 
-<a class="media-tile image-tile" href="{{ item.url }}">
-    <img width="122" src="{{ stubbed_image_url }}" alt="...">
+<a class="media-tile image-tile" href="{{ item.url }}" style="background-image: url(../img/content/media-tile-1.png)">
     <div class="text">
-        <h2>{{ item.title }}</h2>
+        <h2>{{ "Title goes here" }}</h2>
 
 		<!-- Optional -->
-        {% if item.description %}
+
         <span class="desc">
-            {{ item.description }}
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco."
         </span>
-        {% endif %}
+
 
     </div>
     <i class="fa fa-angle-right"></i>
