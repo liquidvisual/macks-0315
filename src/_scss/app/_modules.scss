@@ -13,6 +13,7 @@
 
 .three-pane-feature {
 	position: relative;
+	overflow: hidden; // does this fix issue?
 
 	@media #{$large-up} {
 	    padding: rem-calc(20 0); // add onto 30px by each panel

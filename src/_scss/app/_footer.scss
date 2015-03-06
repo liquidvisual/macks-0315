@@ -41,7 +41,7 @@
 
 	.block-list {
 		@media #{$small-only} {
-		    margin-bottom: rem-calc(30);
+		    margin-bottom: rem-calc(30) !important; // look into refactor
 		}
 	}
 

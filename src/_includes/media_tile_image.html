@@ -1,6 +1,8 @@
 {% assign stubbed_image_url = item.img_path %}
+{% assign img_path = "/img/content/media-tile-1.png" %}
+<!-- { % assign img_path = "http://lorempixel.com/610/260/business" %} -->
 
-<a class="media-tile image-tile" href="{{ item.url }}" style="background-image: url(../img/content/media-tile-1.png)">
+<a class="media-tile image-tile" href="{{ item.url }}" style="background-image: url({{ img_path | prepend: site.assets }})">
     <div class="text">
         <h2>{{ "Title goes here" }}</h2>
 
