@@ -26,19 +26,19 @@
 
 	a {
 		display: inline-block;
-		max-height: rem-calc(44);
+		max-height: rem-calc(48);
 		padding-right: rem-calc(40);
 		overflow: hidden;
 
-		&:after {
-			position: absolute;
-			top: 50%;
-			right: rem-calc(15);
-			content: "\f105";
-			font-size: rem-calc(30);
-			font-family: "FontAwesome";
-			line-height: 0;
-		}
+		// &:after {
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	right: rem-calc(15);
+		// 	content: "\f105";
+		// 	font-size: rem-calc(30);
+		// 	font-family: "FontAwesome";
+		// 	line-height: 0;
+		// }
 	}
 }
 

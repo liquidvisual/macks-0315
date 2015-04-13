@@ -30,8 +30,12 @@
 	padding: rem-calc(50 0);
 
 	.hack-align {
+		@media #{$medium-up} {
+		    margin-right: rem-calc(31); // magic
+		}
+
 		@media #{$large-up} {
-		    margin-right: rem-calc(68);
+		    margin-right: rem-calc(68 + 31); // magic
 		}
 	}
 

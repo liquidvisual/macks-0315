@@ -2,21 +2,7 @@
 layout: master
 ---
 
-<div class="internal">
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-header">
-            <div class="row outer-row">
-                <div class="columns">
-                    <div class="animated fadeInLeft">
-                        <h1>{{ page.title }}</h1>
-                    </div>
-                </div> <!-- .columns -->
-            </div> <!-- .row -->
-        </div> <!-- .hero-header -->
-    </section> <!-- .hero -->
-
+{% comment %}
     <!-- BREADCRUMBS -->
     <nav class="breadcrumbs-bar">
         <div class="row collapse outer-row">
@@ -25,7 +11,21 @@ layout: master
             </div> <!-- .columns -->
         </div> <!-- .row -->
     </nav> <!-- .breadcrumbs-wrapper -->
+{% endcomment %}
 
-    {{ content }}
-
-</div> <!-- .internal -->
+<section class="content">
+    <div class="row outer-row">
+        <div class="large-9 large-push-3 columns">
+            <main class="main">
+                <header class="main-header">
+                    <h1 class="left">{{ page.title }}</h1>
+                    <a class="button grey-button" href="#" ><i class="fa fa-angle-left"></i>&nbsp; Back to News</a>
+                </header>
+                {{ content }}
+            </main>
+        </div>
+        <div class="large-3 large-pull-9 columns">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</section>

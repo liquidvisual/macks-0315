@@ -16,9 +16,23 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	// text-transform: uppercase;
+}
+
+date {
 	text-transform: uppercase;
 }
 
+.h1 { font-size: $h1-font-size; }
+.h2 { font-size: $h2-font-size; }
+.h3 { font-size: $h3-font-size; }
+.h4 { font-size: $h4-font-size; }
+.h5 { font-size: $h5-font-size; }
+.h6 { font-size: $h6-font-size; }
+
+hr {
+	padding-bottom: rem-calc(30);
+}
 
 //=========================================
 //

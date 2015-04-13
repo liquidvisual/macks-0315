@@ -11,7 +11,44 @@
 // Forms
 //-----------------------------------------------------------------
 
+.mmenu .search-form {
+	input {
+		background: url(../img/ui/search-icon.svg) no-repeat 98% center;
+		background-color: rgba(white, .03);
+		background-size: 15px;
+		padding-right: rem-calc(30);
+	}
+}
 
+.mmenu .search-form input,
+.global-header .search-wrapper input {
+	&::-webkit-input-placeholder { text-align: right; }
+	&:-moz-placeholder { text-align: right; }
+	&::-moz-placeholder { text-align: right; }
+	&:-ms-input-placeholder { text-align: right; }
+}
+
+//=========================================
+// Search Form
+//=========================================
+
+.global-header .search-wrapper {
+	position: absolute;
+	top: rem-calc(20);
+	right: rem-calc(15);
+	// width: rem-calc(230);
+	width: rem-calc(400);
+
+	input {
+		padding: rem-calc(0 5); // reset
+		height: rem-calc(30);
+		border-color: #E0E0E0;
+		box-shadow: none;
+		background: url(../img/ui/search-icon.svg) no-repeat 98% center;
+		background-size: 15px;
+		padding-right: rem-calc(25);
+	}
+}
 
 //=========================================
 //

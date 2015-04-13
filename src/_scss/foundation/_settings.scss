@@ -99,6 +99,12 @@ $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, san
 $primary-color: #17a6e7;
 $secondary-color: #006080; //#27505d;
 $tertiary-color: #F2F2F0;
+
+// Greys
+$dark-grey: #DEDEDC;
+$light-grey: #F2F2F0;
+$lightest-grey: #FBFBFB;
+
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -126,7 +132,7 @@ $tertiary-color: #F2F2F0;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: #728187; //$jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -215,8 +221,8 @@ $header-font-color: $secondary-color; //$jet;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
+$h1-font-size: rem-calc(45);
+$h2-font-size: rem-calc(25);
 $h3-font-size: rem-calc(22); //rem-calc(27);
 $h4-font-size: rem-calc(20);
 // $h5-font-size: rem-calc(18);
@@ -388,7 +394,7 @@ $paragraph-font-size: rem-calc(14); //1rem;
 
 // We use this to control the maximum number of block grid elements per row
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: rem-calc(20);
+$block-grid-default-spacing: rem-calc(60);
 // $align-block-grid-to-grid: false;
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
@@ -949,7 +955,7 @@ $button-bg-color: darken($secondary-color, 5%);
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
+$pagination-link-current-background: #8F8F8F; //$primary-color;
 // $pagination-link-current-font-color: $white;
 // $pagination-link-current-font-weight: $font-weight-bold;
 // $pagination-link-current-cursor: default;

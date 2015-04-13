@@ -55,11 +55,58 @@ if (TOUCH_ENABLED) {
 // <= IE8 Caution Message
 //-----------------------------------------------------------------
 
+$(".js-expander").click(function(e){
+    var $this = $(this);
+    var $content = $this.siblings('.lv-expander-content');
+
+    e.preventDefault();
+
+    $content.toggleClass('hide animated fadeIn');
+    $("i", $this).toggleClass('fa-angle-down');
+});
+
 //$('.lv-alert .close-btn').click(function(){$(this).parent().hide();});
 
 //-----------------------------------------------------------------
 // +++ HELPERS +++
 //-----------------------------------------------------------------
+
+//-----------------------------------------------------------------
+// Screen Data Tool
+//-----------------------------------------------------------------
+
+function screenData() {
+    if ($('.lv-screen-data').length != 1) {
+        $('.lv-super').append('<div class="lv-screen-data"></div>');
+    }
+    var screenWidth = $(window).width();
+    var screenHeight = $(window).height();
+    var device;
+
+    if (screenWidth <= 640) device = "Small";
+    if (screenWidth > 640 && screenWidth <= 1024) device = "Medium";
+    if (screenWidth > 1024 && screenWidth <= 1280) device = "Large";
+    if (screenWidth > 1280) device = "xLarge";
+
+    $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device)
+        .css({
+            'position': 'fixed',
+            'top': 0,
+            'padding': '10px 20px',
+            'background': 'rgba(0,0,0,0.5)',
+            'font-family': 'Helvetica Neue',
+            'font-size': '14px',
+            'color': 'white',
+            'z-index': 9000
+        });
+}
+
+screenData();
+
+$(window).resize(function(){
+    screenData();
+});
+
 //==================================================
 // Developer: COMMAND+S for screen width
 //==================================================

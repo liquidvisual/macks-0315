@@ -26,6 +26,20 @@
 	}
 }
 
+.grey-button {
+	padding: rem-calc(0 15);
+	line-height: 30px;
+	background: #F4F4F4;
+	color: #97A2AA;
+	font-size: rem-calc(14);
+	font-weight: normal;
+	margin: 0;
+
+	&:after {
+		display: none;
+	}
+}
+
 //=========================================
 //
 //=========================================

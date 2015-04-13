@@ -10,6 +10,20 @@
 //-----------------------------------------------------------------
 // Sections
 //-----------------------------------------------------------------
+
+.content {
+	padding-top: rem-calc(80);
+	padding-bottom: rem-calc(60);
+	background: #FBFBFB;
+}
+
+.main {
+	// internal template better aligns main text
+	@media #{$large-up} {
+		padding-left: rem-calc(30);
+	}
+}
+
 //=========================================
 //
 //=========================================

@@ -1,6 +1,5 @@
 ---
 layout: master
-hero_link: /some-link-here/
 ---
 
 {% assign settings = site.data.settings %}
@@ -24,7 +23,7 @@ hero_link: /some-link-here/
 
 		</div> <!-- .columns -->
 		<div class="large-3 columns collapse-left-for-large">
-			{% include blog_panel.html %}
+			{% include blog_panel.html max_entries="4" %}
 		</div> <!-- .columns -->
 	</div> <!-- .row -->
 </div> <!-- .lv-hero -->

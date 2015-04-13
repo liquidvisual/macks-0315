@@ -1,0 +1,29 @@
+---
+layout: internal
+include_news: true
+---
+
+<br>
+
+<ul class="medium-block-grid-2">
+	{% for i in (1..4) %}
+	<li>
+		<a href="/news/news-item/">
+			<article class="media-article">
+				<p><img width="100%" src="http://lorempixel.com/460/240/business?{{i}}"></p>
+				<h3>PPSA: Miss-timing can be Costly</h3>
+				<p><date>Wednesday, February 18, 2015</date></p>
+
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+					<span class="read-more">Read More <i class="fa fa-angle-right"></i></span>
+				</p>
+			</article>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+
+<hr>
+
+{% include snippets/pagination.html %}

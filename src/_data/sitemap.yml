@@ -3,7 +3,7 @@
 
 - title: Services
   url: /services/
-  include_children_in_nav: false
+  include_children_in_nav: true
   children:
     - title: Our Services
       url: "#"
@@ -14,8 +14,6 @@
         - title: "Restructuring & Turnaround"
           url: "#"
         - title: Insolvency
-          url: "#"
-        - title: ---
           url: "#"
 
     - title: Practical Information
@@ -61,5 +59,14 @@
     - title: News
       url: "#"
 
+- title: News
+  url: /news/
+
 - title: Contact
   url: /contact/
+
+- title: Client Login
+  url: "#client-login"
+
+- title: Join Newsletter
+  url: "#join-newsletter"

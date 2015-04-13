@@ -1,63 +1,59 @@
-@import "foundation/settings";
 /*
     SIDE-NAV.CSS
 
-    - updated: 04.12.14
+    - updated: 10.04.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Side Nav
 //-----------------------------------------------------------------
 
-.lv-super .side-nav {
-    padding: rem-calc(0 0 30 0);
+.side-nav {
+    list-style: none;
+    margin: 0;
 
-    li {
-        margin-bottom: 0;
-        font-size: rem-calc(16);
+    > li {
+        margin-bottom: rem-calc(5);
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+
+        li {
+            margin-bottom: 0;
+        }
 
         a {
-            display: block;
-            line-height: 1.2;
-            padding: rem-calc(18);
-            margin-bottom: 1px;
-            color: white;
-            background: $primary-color;
+            padding: rem-calc(15 35);
         }
+    }
 
-        &.active-parent > a {
-            background: lighten($secondary-color, 10%);
-            color: white !important; // refactor
-        }
+    .active a {
+        background: darken($primary-color, 10%);
+        position: relative;
 
-        &.active > a {
-            background: $secondary-color;
-            color: white !important; // refactor
+        &:after {
+            content: "\f105";
+            font-size: rem-calc(20);
+            font-family: 'FontAwesome';
+            position: absolute;
+            top: 0;
+            right: 20px;
+            height: 100%;
+            line-height: 55px;
         }
+    }
+
+    a {
+        display: block;
+        background: $primary-color;
+        color: white;
+        padding: rem-calc(15 20);
+        font-size: rem-calc(16);
     }
 }
 
-.no-touch .lv-super .side-nav li a:hover {
-    background: darken($primary-color, 10%);
-    color: white;
-}
-
-// Hovers
-.no-touch .lv-super .side-nav li.active a:hover,
-.no-touch .lv-super .side-nav li.active-parent a:hover {
-    background: $secondary-color;
-}
-
 //=========================================
-// Side Nav
+//
 //=========================================
-
-.lv-super .side-nav ul li a {
-    background: lighten($secondary-color, 10%);
-
-    @media #{$large-up} {
-        padding-left: rem-calc(40);
-        padding-right: rem-calc(20);
-    }
-
-}

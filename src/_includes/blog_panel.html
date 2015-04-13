@@ -1,11 +1,12 @@
 {% assign settings = site.data.settings %}
 {% assign news_entries = site.data.articles %}
+{% assign max_entries = include.max_entries %}
 
 <div class="block-panel blog-panel">
 	<div class="inner">
 		<h3>News</h3>
 		<ul class="block-list">
-			{% for item in news_entries limit: 4 %}
+			{% for item in news_entries | limit: max_entries %}
 				<li>
 					<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE -->
 					<article class="blog-article">

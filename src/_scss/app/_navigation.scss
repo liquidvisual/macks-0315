@@ -77,6 +77,10 @@ $column-gutter: 15px !default;
 	// color: #ddd;
 }
 
+.topbar a.placeholder {
+	visibility: hidden;
+}
+
 //-----------------------------------------------------------------
 // Nested Dropdowns
 //-----------------------------------------------------------------
@@ -87,41 +91,90 @@ $column-gutter: 15px !default;
 	color: white;
 }
 
+.topbar .dropdown.mega {
+	width: rem-calc(980);
+	padding-bottom: 0;
+}
+
 .topbar .dropdown {
 	position: absolute;
 	top: 100%;
 	// left: 0; // option
 	right: $column-gutter/2;
-	border-top: 10px solid $primary-color;
-	// width: rem-calc(272);
-	min-width: rem-calc(450);
-	// opacity: 0;
-	// height: 0; // so hit areas aren't triggered
+	visibility: hidden;
+
+	width: rem-calc(450);
+	opacity: 0;
+	height: 0; // so hit areas aren't triggered
 	overflow: hidden; // so hit areas aren't triggered
+	background: #0085C3;
+	z-index: 1;
+
+	padding-bottom: rem-calc(20);
 
 	li {
 		margin: 0; // locked
+	}
+
+	> li {
+		padding: rem-calc(15 20);
+	}
+
+	a {
+		background: none;
 	}
 }
 
 // Dropdown Color is here
 .topbar .dropdown a {
-	// display: block;
 	display: inline-block;
-	padding: rem-calc(10 15);
-	background: #0286C6;
+	padding: rem-calc(10 0);
 	color: white;
 }
 
 //-----------------------------------------------------------------
+// Nested Dropdown
+//-----------------------------------------------------------------
+
+.topbar .dropdown ul {
+	border-top: 1px solid $primary-color;
+	border-bottom: 1px solid $primary-color;
+	padding: rem-calc(10 0);
+	margin-bottom: rem-calc(15);
+
+	li {
+		padding: 0;
+		background: none;
+	}
+
+	a {
+		padding: rem-calc(3 0);
+		background: none !important;
+	}
+}
+
+//=========================================
+// Tints
+//=========================================
+
+.tint-1 { background: #126D9C; }
+.tint-2 { background: #167BB0; }
+.tint-3 { background: #1888C4; }
+
+//-----------------------------------------------------------------
 // Hover & Active States
 //-----------------------------------------------------------------
+
 .topbar .has-dropdown:hover > .dropdown {
 	opacity: 1;
 	height: auto;
 	overflow: visible;
+	border-top: 10px solid $primary-color;
+	visibility: visible;
 }
 
-
+.topbar .active > a {
+	background: $light-grey;
+}
 
 

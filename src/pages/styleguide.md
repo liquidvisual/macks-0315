@@ -1,5 +1,5 @@
 ---
-layout: text_page
+layout: internal
 title: Styleguide
 permalink: /styleguide/
 ---

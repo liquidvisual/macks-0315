@@ -11,13 +11,24 @@
 // Social Networks
 //-----------------------------------------------------------------
 
-.global-footer .social-networks a {
+.social-networks a {
 	width: rem-calc(40);
 	border: 1px solid white;
 	font-size: rem-calc(25);
 	line-height: rem-calc(40);
 	text-align: center;
 	margin-left: rem-calc(10); // special case
+	color: white;
+}
+
+.mm-nolist.social-networks {
+	padding-top: rem-calc(10);
+	overflow: hidden;
+	margin-bottom: rem-calc(15);
+
+	a {
+		margin: rem-calc(0 10 0 0);
+	}
 }
 
 //=========================================
