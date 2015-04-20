@@ -1,28 +1,33 @@
 /*
-    TEXT-EDITOR.CSS
+    SPECIAL.CSS - Refactor Later
 
     - Last updated: ^^^^^^^^
     - hello@liquidvisual.com
-
-    ** Notes **
-
-    - Point your CMS' text editor to this compiled stylesheet.
-    - Any new styles created for WYSIWYG content, add in here too.
-    - Important: Remove underscore so it compiles as own stylesheet
 */
 //-----------------------------------------------------------------
-// Text Editor Classes
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Special
 //-----------------------------------------------------------------
 
-// .button {/**/};
-// .lead {/**/};
-// .primary-color {/**/};
-// .subheader {/**/};
-// .triangle-list {/**/};
+.primary-color {
+    color: $primary-color;
+}
 
-//-----------------------------------------------------------------
-// Import Components for Classes
-//-----------------------------------------------------------------
+.uppercase {
+	text-transform: uppercase;
+}
+
+.news-article {
+	h1 {
+		font-weight: normal;
+		@media #{$medium-up} {
+			font-size: rem-calc(30);
+		}
+	}
+}
+
 //=========================================
 //
 //=========================================

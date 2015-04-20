@@ -1,7 +1,7 @@
 ---
 layout: internal/news
 title: News
-permalink: /news/
+permalink: /about/news/
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

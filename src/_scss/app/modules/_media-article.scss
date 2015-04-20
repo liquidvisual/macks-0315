@@ -1,0 +1,79 @@
+/*
+    MEDIA-ARTICLE.CSS
+
+    - Last updated: 20.04.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media Articles (Multiple)
+//-----------------------------------------------------------------
+
+.media-articles {
+	border-bottom: 1px solid #E0E0E0;
+	margin-top: rem-calc(40); // breaking rules slightly
+
+	h2 {
+		text-transform: uppercase;
+		font-size: $h6-font-size;
+		font-weight: bold;
+	}
+
+	.media-article { // general catch-all
+	    position: relative;
+	    border-top: 1px solid #E0E0E0;
+	    padding: rem-calc(30 0);
+	    padding-right: rem-calc(25); // for expander - easier to include generally
+	}
+}
+
+//-----------------------------------------------------------------
+// Media Article (Single - Used in News and services index)
+//-----------------------------------------------------------------
+
+.media-article {
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+
+	h4 {
+	    font-size: rem-calc(14);
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    border-bottom: 1px solid #EBEBEB;
+	    padding-bottom: rem-calc(10);
+	    margin-bottom: rem-calc(20);
+	}
+
+	.subheader {
+	    color: #9FABB1;
+	    font-weight: bold;
+	}
+
+	.text {
+		margin-bottom: 0;
+	}
+
+	p {
+		color: $body-font-color;
+	}
+
+	//=========================================
+	// Optional
+	//=========================================
+
+	.lv-expander {
+	    position: absolute;
+	    top: -15px;
+	    right: 0;
+	    font-size: rem-calc(35);
+	    color: $secondary-color;
+
+	    &:hover {
+	        color: $primary-color;
+	    }
+	}
+}

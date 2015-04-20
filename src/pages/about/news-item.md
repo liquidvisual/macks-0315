@@ -1,18 +1,15 @@
 ---
 layout: internal/news_item
-title: News Item
-permalink: /news/news-item/
+title: News
+permalink: /about/news/news-item/
+back_title: News
 ---
 
 <!--- This child document initializes the page in Jekyll. -->
 
-<br>
-
 A Personal Properties Security Register (PPSR) was established under the Act in 2012, its aim being to register a person’s or a business’ security in a company for various reasons, especially in the event of the company’s insolvency.
 
 Initially everyone involved thought the new regime was bound to work well because it reduced complexity and legal battles by having all secured interests listed together on a single public register. But problems began to arise to an extent the Federal Government believed changes were necessary.
-
-<br>
 
 ### Herewith the Process
 
@@ -23,8 +20,6 @@ Submissions relating specifically to small business issues closed on 6 June, 201
 A report from the reviewer was due for completion by the end of January for tabling in Parliament (as mentioned earlier) on, or some time before 18 March.
 
 But at least by 18 March, everyone associated with secured lending against personal property - an important element of the Australian credit market and the broader economy - will have a good idea of whether proposed improvements to the PPSA are heading in what they consider to be the right direction.
-
-<br>
 
 ### Some Further background
 
@@ -41,12 +36,3 @@ Indeed, the judiciary has been notably reluctant in some instances to have to up
 Yet financiers generally agree the regime makes it easier for them to perform due diligence, particularly because potential borrowers have fewer commercially negligible registrations against them on the PPSR.
 
 For more information on, or questions about the PPSA contact Macks Advisory on 08 8231 3323 or visit our office at Level 11, 99 Gawler Place, Adelaide SA 5000.
-
----
-
-<em>Disclaimer: The information contained in this webpage is general information and does not constitute legal advice. Nothing in this webpage is or purports to be advice. If you do need advice, then you ought to seek and obtain appropriate personal professional advice based on your personal circumstance.</em>
-
-<p class="text-right">
-	<a href="#" class="button grey-button"><i class="fa fa-angle-left"></i>&nbsp; Back to News</a>
-</p>
-

@@ -2,61 +2,78 @@
 /*
     MAIN.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 20.04.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
-// Foundation Settings
+// Foundation
 //-----------------------------------------------------------------
 
 @import "foundation/app";
 
 //-----------------------------------------------------------------
-// Liquid Visual Components
+// Liquid Visual
 //-----------------------------------------------------------------
 
 @import "liquidvisual/components/alerts";
 @import "liquidvisual/components/breadcrumbs";
-// @import "liquidvisual/components/buttons";
 @import "liquidvisual/components/hero";
 @import "liquidvisual/components/inline-list";
-// @import "liquidvisual/components/sections";
 @import "liquidvisual/components/toolbox";
-// @import "liquidvisual/components/topbar";
 
 //-----------------------------------------------------------------
 // App Unique
 //-----------------------------------------------------------------
 
-@import "app/variables";
-@import "app/global";
-@import "app/mixins";
+@import "app/base/fonts";
+@import "app/base/global";
+@import "app/base/mixins";
+@import "app/base/variables";
 
 //=========================================
+// Components
+//=========================================
 
-@import "app/breadcrumbs";
-@import "app/block-panel";
-@import "app/buttons";
-@import "app/fonts";
-@import "app/footer";
-@import "app/forms";
-@import "app/gallery";
-@import "app/header";
-@import "app/hero";
-@import "app/lists";
-@import "app/media";
-@import "app/media-tile";
-@import "app/modules";
-@import "app/navigation";
-@import "app/sections";
-@import "app/sidebar";
-@import "app/side-nav";
-@import "app/tabs";
-@import "app/social-networks";
-@import "app/special";
-@import "app/widgets";
-@import "app/themes";
-@import "app/type";
+@import "app/components/breadcrumbs";
+@import "app/components/buttons";
+@import "app/components/forms";
+@import "app/components/lists";
+@import "app/components/social-networks";
+@import "app/components/type";
+
+//=========================================
+// Layout
+//=========================================
+
+@import "app/layout/footer";
+@import "app/layout/header";
+@import "app/layout/navigation";
+@import "app/layout/side-nav";
+@import "app/layout/sidebar";
+
+//=========================================
+// Modules
+//=========================================
+
+@import "app/modules/block-panel";
+@import "app/modules/gallery";
+@import "app/modules/hero";
+@import "app/modules/media-article";
+@import "app/modules/media-block";
+@import "app/modules/media-tile";
+@import "app/modules/media-panel";
+@import "app/modules/sections";
+@import "app/modules/tabs";
+@import "app/modules/three-pane-feature";
+
+//=========================================
+// Helpers
+//=========================================
+
+// @import "app/helpers/expander";
+@import "app/helpers/special";
+@import "app/helpers/text-editor";
+@import "app/helpers/themes";
 
 //-----------------------------------------------------------------
 // Vendor

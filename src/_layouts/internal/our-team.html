@@ -1,0 +1,27 @@
+---
+layout: internal
+---
+
+{{ content }}
+
+<section class="media-articles">
+
+	{% for i in (1..2) %}
+		<a href="/about/our-team/our-team-item/">
+			<article class="media-article">
+				<div class="row">
+					<div class="medium-3 columns">
+						<img width="220" src="/img/ui/no-face.png">
+					</div>
+					<div class="medium-9 columns">
+						<h3>Ian Burford</h3>
+						<p><strong class="subheader uppercase">Director</strong></p>
+						<p>Ian is a highly skilled advisor with over 30 years experience advising clients including 15 years insolvency experience. He was previously a director of a mid-sized accounting practice advising clients on all aspects of business structuring and restructuring.
+						<span class="read-more" href="/about/our-team/our-team-item/">Read More <i class="fa fa-angle-right"></i></span></p>
+					</div>
+				</div>
+			</article>
+		</a>
+	{% endfor %}
+
+</section> <!-- .media-articles -->

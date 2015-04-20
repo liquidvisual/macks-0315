@@ -3,23 +3,41 @@ layout: internal
 include_news: true
 ---
 
-<h1 class="h2">Report on PPSA Review to be Tabled in Parliament</h1>
-<date>18 February 2015</date>
-<br><br><br>
+<article class="media-article news-article">
 
-<div class="media-panel right">
-    <img src="http://lorempixel.com/460/240/sports">
-    <div class="media-panel-content">
-    	<h4>Downloads</h4>
-		<ul class="no-bullet">
-			<li><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp; PDF download link can go here &nbsp;<i class="fa fa-angle-right"></i></a></li>
-			<li><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp; Another download link if required &nbsp;<i class="fa fa-angle-right"></i></a></li>
-		</ul>
-    </div> <!-- .blog-panel -->
-</div>
+	<!-- HEADING -->
+	<h1>Report on PPSA Review to be Tabled in Parliament</h1>
+	<p><date class="subheader uppercase">18 February 2015</date></p>
+	<br>
 
-<p class="lead">
-	Macks Advisory suggests business owners, managers and their advisers keep a sharp lookout for the report on a review of the Personal Property Securities Act 2009 (PPSA) that should be tabled in the Federal Parliament no later than 18 March 2015. Thereafter the report, required by section 343 of the Act, can be seen on the Parliament of Australia website.
-</p>
+	<!-- MEDIA PANEL (RIGHT) -->
+	<div class="media-panel image-right">
+	    <img width="460" src="http://lorempixel.com/460/240/sports">
+	    <div class="media-panel-content">
+	    	<h4>Downloads</h4>
+			<ul class="no-bullet">
+				<li><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp; PDF download link can go here &nbsp;<i class="fa fa-angle-right"></i></a></li>
+				<li><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp; Another download link if required &nbsp;<i class="fa fa-angle-right"></i></a></li>
+			</ul>
+	    </div> <!-- .media-panel-content -->
+	</div> <!-- .media-panel -->
 
-{{ content }}
+	<!-- LEAD PARAGRAPH -->
+	<p class="lead">
+		Macks Advisory suggests business owners, managers and their advisers keep a sharp lookout for the report on a review of the Personal Property Securities Act 2009 (PPSA) that should be tabled in the Federal Parliament no later than 18 March 2015. Thereafter the report, required by section 343 of the Act, can be seen on the Parliament of Australia website.
+	</p>
+
+	{{ content }}
+
+</article>
+
+<hr>
+
+<!-- DISCLAIMER -->
+<p><em>Disclaimer: The information contained in this webpage is general information and does not constitute legal advice. Nothing in this webpage is or purports to be advice. If you do need advice, then you ought to seek and obtain appropriate personal professional advice based on your personal circumstance.</em></p>
+
+{% if page.back_title %}
+    <p class="text-right">
+    	<a href="/about/news/" class="button grey-button"><i class="fa fa-angle-left"></i>&nbsp; Back to {{ page.title }}</a>
+    </p>
+{% endif %}

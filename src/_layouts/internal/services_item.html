@@ -3,49 +3,30 @@ layout: internal
 type: 'service_item'
 ---
 
-<br>
+<section class="media-articles">
 
-<h2 class="h6"><strong>CASE STUDIES</strong></h2>
+	<h2>Case Studies</h2>
 
-{% for i in (1..4) %}
-<article class="media-case">
-	<div class="row">
-		<div class="medium-4 columns show-for-medium-up">
-			<img src="http://lorempixel.com/360/190/nature?{{i}}">
-		</div>
-		<div class="medium-8 columns">
-			<h3>Flagstaff Proprietors</h3>
-			<a class="lv-expander js-expander" href="#"><i class="fa fa-angle-up fa-angle-down"></i></a>
-			<p><strong class="subheader">Mortgagee in Possession</strong></p>
-			<p>Sizeable non-contiguous land holding of approx 8,000 acres of farm land around Burra, SA.</p>
-
-			<div class="lv-expander-content hide">
-				<h4>Background</h4>
-				<p>
-					- Sizeable non-contiguous land holding of approx. 8,000 acres of farm land around   Burra, SA
-					- Land held by well-known local family for 100+ years
-					- Relationship with financier soured with owners initiating proceedings and fighting   possession orders
-				</p>
-				<h4>Action</h4>
-				<p>
-					- Assisted financier to take possession and secure assets
-					- Assessed condition of land and utilised appropriate experts
-					- Appointed property manager for daily presence and efficiency
-					- Managed 600 head of cattle on properties until ownership dispute settled
-					- Facilitated lease of property to experienced operator to provide income, maintain  soil conditioning and improve appearance for sale
-					- Tendered for and appointed local sales agent
-					- Realised surplus assets and supplies
-				</p>
-				<h4>Result</h4>
-				<p>
-					- Strong auction results for properties
-					- Realised proceeds from healthy herd of cattle with few maintenance issues
-				</p>
+	{% for i in (1..4) %}
+	<article class="media-article">
+		<div class="row">
+			<div class="medium-4 columns show-for-medium-up">
+				<img src="http://lorempixel.com/360/190/nature?{{i}}">
 			</div>
+			<div class="medium-8 columns">
+				<h3>Flagstaff Proprietors</h3>
+				<p><strong class="subheader">Mortgagee in Possession</strong></p>
+				<p>Sizeable non-contiguous land holding of approx 8,000 acres of farm land around Burra, SA.</p>
 
+				<!-- Expander -->
+				<a class="lv-expander js-expander" href="#"><i class="fa fa-angle-up fa-angle-down"></i></a>
+				<div class="lv-expander-content hide">
+					{{ content }}
+				</div>
+
+			</div>
 		</div>
-	</div>
-</article>
-{% endfor %}
+	</article>
+	{% endfor %}
 
-<hr>
+</section> <!-- .media-articles -->

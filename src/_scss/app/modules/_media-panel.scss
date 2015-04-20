@@ -1,5 +1,5 @@
 /*
-    SPECIAL.CSS - Refactor Later
+    MEDIA.CSS
 
     - Last updated: ^^^^^^^^
     - hello@liquidvisual.com
@@ -8,11 +8,28 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Special
+// Media
 //-----------------------------------------------------------------
 
-.primary-color {
-    color: $primary-color;
+// Used in content - align with [.image-right, .image-left] classes
+.media-panel.image-right {
+	@media #{$small-only} {
+	    margin-bottom: rem-calc(30);
+	}
+}
+
+.media-panel-content {
+	background: $light-grey;
+	padding: rem-calc(20 30 5 30);
+
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: uppercase;
+	}
+
+	.fa-file-pdf-o {
+		color: #AFC3CC;
+		font-size: rem-calc(20);
+	}
 }
 
 //=========================================

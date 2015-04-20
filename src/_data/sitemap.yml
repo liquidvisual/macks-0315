@@ -6,7 +6,7 @@
   include_children_in_nav: true
   children:
     - title: Our Services
-      url: "#"
+      url: "/services/"
       include_children_in_nav: true
       children:
         - title: Corporate Advisory
@@ -53,14 +53,11 @@
   include_children_in_nav: false
   children:
     - title: Our Team
-      url: "#"
+      url: "/about/our-team/"
     - title: Why Use Us?
-      url: "#"
+      url: "/about/why-use-us/"
     - title: News
-      url: "#"
-
-- title: News
-  url: /news/
+      url: "/about/news/"
 
 - title: Contact
   url: /contact/
