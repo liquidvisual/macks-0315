@@ -2,6 +2,8 @@
 layout: internal/our-team
 title: Our Team
 permalink: /about/our-team/
+side_nav_id: 2
+side_nav_top_level_id: 2
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

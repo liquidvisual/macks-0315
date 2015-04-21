@@ -11,8 +11,23 @@
 // Gallery
 //-----------------------------------------------------------------
 
+.gallery-listing {
+	@include block-grid($per-row: 1, $spacing: 20px, $base-style: true);
 
+	@media #{$medium-up} {
+	    @include block-grid($per-row: 2, $spacing: 20px, $base-style: true);
+	}
+
+	@media #{$large-up} {
+	    @include block-grid($per-row: 3, $spacing: 20px, $base-style: true);
+	}
+
+	li {
+		margin: 0;
+	}
+}
 
 //=========================================
 //
 //=========================================
+

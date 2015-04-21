@@ -1,0 +1,41 @@
+@import "foundation/settings";
+/*
+    MEDIA-TILE.CSS
+
+    - updated: 04.12.14
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$light-grey: $light-grey;
+
+//-----------------------------------------------------------------
+// Media Tile
+//-----------------------------------------------------------------
+
+.media-tile-simple {
+    position: relative;
+    display: block; // inline block causes incorrect units with list parent
+    width: 100%;
+    height: rem-calc(164);
+    background: #E8E6E7;
+
+    &:hover {
+        @media #{$medium-up} {
+            background: darken(#E8E6E7, 10%);
+        }
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: rem-calc(5 15);
+    }
+}
+
+//=========================================
+// Icon Arrow
+//=========================================

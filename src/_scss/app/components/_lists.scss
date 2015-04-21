@@ -45,7 +45,7 @@
 .block-list {
 	@media #{$large-up} {
 	    li:hover a {
-			color: white;
+			color: $primary-color;
 	    }
 	}
 }

@@ -5,7 +5,7 @@
   url: /services/
   include_children_in_nav: true
   children:
-    - title: Our Services
+    - title: Areas of Practice
       url: "/services/"
       include_children_in_nav: true
       children:
@@ -50,7 +50,7 @@
 
 - title: About
   url: /about/
-  include_children_in_nav: false
+  include_children_in_nav: true
   children:
     - title: Our Team
       url: "/about/our-team/"

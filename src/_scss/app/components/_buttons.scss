@@ -26,6 +26,10 @@
 	}
 }
 
+//=========================================
+// Grey Button (back)
+//=========================================
+
 .grey-button {
 	padding: rem-calc(0 15);
 	line-height: 30px;
@@ -40,7 +44,10 @@
 	}
 }
 
-// feux anchor
+//=========================================
+// // feux anchor
+//=========================================
+
 .read-more {
 	color: $primary-color;
 	white-space: nowrap;
@@ -49,3 +56,18 @@
 //=========================================
 //
 //=========================================
+
+.lv-super .special-download-button {
+	background: #0E5976;
+	border-color: #0E5976;
+	width: auto;
+	padding: rem-calc(0 15);
+
+	.text {
+		position: relative;
+		top: -5px;
+		font-size: rem-calc(14);
+	}
+}
+
+

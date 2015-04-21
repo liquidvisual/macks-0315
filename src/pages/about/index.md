@@ -2,12 +2,12 @@
 layout: internal/about
 title: About
 permalink: /about/
+side_nav_top_level_id: 2
 ---
 
 <!--- This child document initializes the page in Jekyll. -->
 
 ## Macks Advisory helps companies unlock value in insolvent or near-insolvent situations
-<br>
 
 Macks Advisory is a boutique advisory firm specialising in Corporate Advisory, Restructure & Turnaround and both Corporate & Personal Insolvency.
 

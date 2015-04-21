@@ -22,11 +22,16 @@
 
         li {
             margin-bottom: 0;
+
         }
 
         a {
             padding: rem-calc(15 35);
         }
+    }
+
+    .active-parent a {
+        border-bottom: 1px solid lighten($primary-color, 10%);
     }
 
     .active a {

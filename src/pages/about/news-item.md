@@ -3,6 +3,7 @@ layout: internal/news_item
 title: News
 permalink: /about/news/news-item/
 back_title: News
+side_nav_top_level_id: 2
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

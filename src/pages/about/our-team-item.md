@@ -3,6 +3,7 @@ layout: internal/our_team_item
 title: Our Team
 permalink: /about/our-team/our-team-item/
 back_title: Team
+side_nav_top_level_id: 2
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

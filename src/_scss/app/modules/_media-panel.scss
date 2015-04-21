@@ -12,10 +12,8 @@
 //-----------------------------------------------------------------
 
 // Used in content - align with [.image-right, .image-left] classes
-.media-panel.image-right {
-	@media #{$small-only} {
-	    margin-bottom: rem-calc(30);
-	}
+.media-panel {
+	margin-bottom: rem-calc(30);
 }
 
 .media-panel-content {

@@ -1,4 +1,8 @@
 <aside class="sidebar">
+
+    {% include snippets/side_nav_andr.html %}
+
+{% comment %}
     {% if page.type == 'service_item' %}
         <ul class="side-nav">
             <li class="active"><a href="/services/">Services</a></li>
@@ -23,6 +27,7 @@
             <li><a href="/about/news/">News</a></li>
         </ul>
     {% endif %}
+    {% endcomment %}
 
     <div class="feature-panel">
         <h4><i class="fa fa-comment"></i>&nbsp; Get in Touch</h4>
@@ -37,7 +42,7 @@
     </div> <!-- .feature-panel -->
 
     {% if page.include_news %}
-        {% include blog_panel.html max_entries="3" %}
+        {% include news_panel.html max_entries="3" %}
     {% endif %}
 
 </aside>

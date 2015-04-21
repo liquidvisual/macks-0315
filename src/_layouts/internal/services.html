@@ -3,3 +3,43 @@ layout: internal
 ---
 
 {{ content }}
+
+<section class="gallery-section">
+
+	<ul class="gallery-listing gallery-listing-simple">
+		{% for i in (1..7) %}
+			<li>
+				<!-- <a class="media-tile" href="/services/industry/services-item/">
+					<div class="inner">
+						<h3>Agribusiness - Agriculture <i class="fa fa-angle-right"></i></h3>
+					</div>
+				</a> -->
+
+				<a class="media-tile-simple" href="/services/industry/services-item/">
+					<h3 class="text">Agribusiness - Agriculture <i class="fa fa-angle-right"></i></h3>
+				</a>
+
+				<!-- <a class="media-tile media-tile-simple" href="#">
+				    <div class="text">
+				        <h2>{{ "Title goes here" }}</h2>
+				    </div>
+				    <i class="fa fa-angle-right"></i>
+				</a> -->
+
+			</li>
+		{% endfor %}
+	</ul>
+
+
+
+	<ul class="gallery-listing">
+		{% for i in (1..7) %}
+			<li>
+				<a href="/services/industry/services-item/">
+					<p><img width="100%" src="http://lorempixel.com/400/200/nature?{{i}}"></p>
+					<h3>Agribusiness - Agriculture <i class="fa fa-angle-right"></i></h3>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

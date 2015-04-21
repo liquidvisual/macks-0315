@@ -1,5 +1,5 @@
 /*
-    BLOG-PANEL.CSS
+    NEWS-PANEL.CSS
 
     - Last updated: 05.12.14
     - hello@liquidvisual.com
@@ -8,34 +8,43 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Blog Section (Internal)
+// News Panel
 //-----------------------------------------------------------------
 
-.block-panel {
+.news-panel {
+    position: relative;
     background: #DEDEDC;
-}
+    padding-bottom: rem-calc(30);
 
-.blog-section {
-    // background: $secondary-color;
-
-    @media #{$medium-up} {
-        padding: rem-calc(20 0);
+    .news-panel-inner {
+        padding: rem-calc(30);
+        overflow: hidden;
     }
 }
 
-//-----------------------------------------------------------------
-// Blog Panel
-//-----------------------------------------------------------------
+//=========================================
+// Media Panel context
+//=========================================
 
-.blog-panel {
-    position: relative;
-    // background: rgba($primary-color, 0.7);
-    margin-top: rem-calc(30); // a bit hacky
+.media-panel .news-panel {
+    li {
+        @media #{$devices-only} {
+            border-bottom: 0; // hacky
+        }
+    }
+}
 
-    .inner {
-        padding: rem-calc(30);
-        overflow: hidden;
+//=========================================
+// Fixed height for hero context
+//=========================================
 
+.lv-hero .news-panel {
+    @media #{$large-up} {
+        height: rem-calc(520);
+        margin-top: 0;
+    }
+
+    .news-panel-inner {
         @media #{$medium-up} {
             max-height: rem-calc(170);
         }
@@ -44,31 +53,13 @@
             max-height: rem-calc(420);
         }
     }
-
-    @media #{$large-up} {
-        height: rem-calc(520);
-        margin-top: 0;
-    }
-}
-
-// Internal
-.internal .blog-panel {
-    background: inherit;
-    height: auto;
-
-    .inner {
-        padding: 0;
-        @media #{$medium-up} {
-            padding: rem-calc(15 25 25 25);
-        }
-    }
 }
 
 //=========================================
 // Block Grid
 //=========================================
 
-.blog-panel ul {
+.news-panel ul {
     @include block-grid(1);
     @media #{$medium-up} { @include block-grid(3); }
     @media #{$large-up}  { @include block-grid(1); }
@@ -78,25 +69,11 @@
     }
 }
 
-// Homepage - divider is vertically centered
-.homepage .blog-panel li {
-    @media #{$medium-up} {
-        padding-bottom: 0;
-    }
-}
-
-// Internal
-.internal .blog-panel ul {
-    @media #{$large-up} {
-        @include block-grid(3);
-    }
-}
-
 //=========================================
 // Header
 //=========================================
 
-.blog-panel h3 {
+.news-panel h3 {
     position: relative;
     font-size: rem-calc(25);
     font-weight: 600;
@@ -108,7 +85,7 @@
 // Button
 //=========================================
 
-.blog-panel .button {
+.news-panel .button {
     background: none;
     padding-right: rem-calc(25);
     margin-bottom: rem-calc(10);;
@@ -121,10 +98,10 @@
 }
 
 //=========================================
-// Blog Article
+// news Article
 //=========================================
 
-.blog-article {
+.news-article {
     padding: rem-calc(15 0);
     line-height: 1.2;
     // border-bottom: 1px solid lighten($primary-color, 10%);
@@ -152,12 +129,12 @@
         font-size: rem-calc(12);
         margin-bottom: rem-calc(10);
         // color: lighten($primary-color, 25%);
-        color: $secondary-color;
+        // color: $secondary-color;
         text-transform: uppercase;
     }
 }
 
-.blog-panel li:last-child .blog-article {
+.news-panel li:last-child .news-article {
     border-bottom: 0;
 }
 

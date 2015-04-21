@@ -2,20 +2,20 @@
 {% assign news_entries = site.data.articles %}
 {% assign max_entries = include.max_entries %}
 
-<div class="block-panel blog-panel">
-	<div class="inner">
+<div class="news-panel">
+	<div class="news-panel-inner">
 		<h3>News</h3>
 		<ul class="block-list">
 			{% for item in news_entries | limit: max_entries %}
 				<li>
 					<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE -->
-					<article class="blog-article">
+					<article class="news-article">
 						<date>{{ item.date }}</date>
 						<a href="{{ item.url }}">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
 					</article>
 				</li>
 			{% endfor %}
 		</ul>
-	</div> <!-- .inner -->
+	</div> <!-- .news-panel-inner -->
 	<a class="button expand text-right" href="#">More News</a>
-</div> <!-- .blog-panel -->
+</div> <!-- .news-panel -->
