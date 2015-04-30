@@ -33,6 +33,9 @@
     <div class="lv-super">
         <div class="lv-page">
 
+            <!-- CLIENT AREA BAR -->
+            
+
             <!-- HEADER -->
             <header class="global-header">
                 
@@ -52,7 +55,7 @@
         <div class="search-wrapper show-for-large-up">
             <div class="row collapse">
                 <div class="small-5 columns">
-                    <a href="#" class="button grey-button"><i class="fa fa-lock"></i>&nbsp; Client Login</a>
+                    <a href="#" data-reveal-id="client-login-modal" class="button grey-button"><i class="fa fa-lock"></i>&nbsp; Client Login</a>
                 </div>
                 <div class="small-7 columns">
                     <form class="search-form">
@@ -197,6 +200,9 @@ consequat. Duis aute irure dolor in reprehenderit</p>
             </main>
         </div>
         <div class="large-3 large-pull-9 columns">
+
+            
+
             <aside class="sidebar">
 
     
@@ -328,6 +334,7 @@ consequat. Duis aute irure dolor in reprehenderit</p>
 
         	<!-- Footer Links -->
             <ul class="global-footer-links lv-inline-list text-right medium-text-right">
+                <li><a href="/sitemap/">Sitemap</a></li>
                 <li><a href="#">Links</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Disclaimer</a></li>
@@ -480,22 +487,9 @@ consequat. Duis aute irure dolor in reprehenderit</p>
 			
 		</li>
 		
-		
-		<li class="">
-			<a href="#client-login">Client Login</a>
 
-			
-			
-		</li>
-		
-		
-		<li class="">
-			<a href="#join-newsletter">Join Newsletter</a>
-
-			
-			
-		</li>
-		
+		<li><a href="#" data-reveal-id="client-login-modal">Client Login</a></li>
+		<li><a href="#">Join Newsletter</a></li>
 	</ul>
 
 	<ul class="mm-nolist social-networks lv-inline-list">
@@ -514,6 +508,96 @@ consequat. Duis aute irure dolor in reprehenderit</p>
 	    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 	</ul> -->
     </nav>
+
+    <!-- MODALS -->
+    
+
+
+<!-- CLIENT LOGIN MODAL -->
+
+<div id="client-login-modal" class="reveal-modal" data-reveal aria-labelledby="client-login-modal-title" aria-hidden="true" role="dialog">
+    <div class="row">
+        <div class="columns">
+            <h2 id="client-login-modal-title">Client Login</h2>
+
+            <section class="modal-body">
+                <div class="row">
+                    <div class="medium-10 large-10 columns">
+                        <form data-abide novalidate method="post" action="#">
+                            <!-- Username -->
+                            <div class="row">
+                                <div class="medium-5 columns">
+                                    <label>
+                                        <input name="username" type="text" placeholder="USER NAME / EMAIL" required>
+                                    </label>
+                                    <small class="error">Your username is required.</small>
+                                </div>
+                                <!-- Password -->
+                                <div class="medium-5 columns">
+                                    <label>
+                                        <input name="password" type="password" placeholder="PASSWORD" required>
+                                    </label>
+                                    <small class="error">Your password is required.</small>
+                                </div>
+                                <!-- Submit -->
+                                <div class="medium-2 columns">
+                                    <button type="submit" class="button">Log In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!-- .columns -->
+                </div> <!-- .row -->
+            </section> <!-- .modal-body -->
+
+            <p><a href="#" data-reveal-id="client-login-password-modal"> Forgot password?</a></p>
+        </div> <!-- .columns -->
+    </div> <!-- .row -->
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div> <!-- reveal-modal -->
+
+<!-- CLIENT LOGIN - PASSWORD REMINDER MODAL -->
+
+<div id="client-login-password-modal" class="reveal-modal" data-reveal aria-labelledby="client-login-password-modal-title" aria-hidden="true" role="dialog">
+    <div class="row">
+        <div class="columns">
+            <h2 id="client-login-password-modal-title">Client Login<br class="show-for-small-only"> - Password Reminder</h2>
+
+            <section class="modal-body">
+
+                <!-- Success Prompt (Hidden by default - remove hide class to show) -->
+                <div id="modal-success-prompt" class="alert-box success hide animated fadeIn">Your password has been emailed to you</div>
+
+                <!-- Error Prompt (Hidden by default - remove hide class to show) -->
+                <div id="modal-error-prompt" class="alert-box error hide animated fadeIn">Your password has been emailed to you</div>
+
+                <div class="form-contents"> <!-- add 'hide' class on form submission callback -->
+                    <div class="row">
+                        <div class="medium-6 large-5 columns">
+                            <form data-abide novalidate method="post" action="#">
+                                <!-- Username -->
+                                <div class="row">
+                                    <div class="medium-10 columns">
+                                        <label>
+                                            <input name="username" type="text" placeholder="USER NAME / EMAIL" required>
+                                        </label>
+                                        <small class="error">Your username is required.</small>
+                                    </div>
+                                    <!-- Submit -->
+                                    <div class="medium-2 columns">
+                                        <button type="submit" class="button">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> <!-- .columns -->
+                    </div> <!-- .row -->
+                </div> <!-- .form-contents -->
+            </section> <!-- .modal-body -->
+
+            <p><a href="#" data-reveal-id="client-login-modal"><i class="fa fa-angle-left"></i>&nbsp; Back to Client Login</a></p>
+        </div> <!-- .columns -->
+    </div> <!-- .row -->
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
     <!--[if lt IE 9]>
     <div class="lv-alert lv-unselectable">
