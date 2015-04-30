@@ -10,13 +10,21 @@ layout: master
 	<div class="row outer-row">
 		<div class="large-9 columns collapse-right-for-large">
 
-			{% for i in (1..2) %}
+			{% for item in promo_practices %}
 				<div class="row collapse">
 					<div class="medium-7 columns">
-						{% include media_tile_image.html %}
+						{% capture title %}{{ item.promos[0].title }}{% endcapture %}
+						{% capture body %}{{ item.promos[0].body }}{% endcapture %}
+						{% capture img_path %}{{ item.promos[0].img_path }}{% endcapture %}
+
+						{% include media_tile_image.html title=title body=body img_path=img_path %}
 					</div>
 					<div class="medium-5 columns last">
-						{% include media_tile_image.html %}
+						{% capture title %}{{ item.promos[1].title }}{% endcapture %}
+						{% capture body %}{{ item.promos[1].body }}{% endcapture %}
+						{% capture img_path %}{{ item.promos[1].img_path }}{% endcapture %}
+
+						{% include media_tile_image.html title=title body=body img_path=img_path %}
 					</div>
 				</div> <!-- .row -->
 			{% endfor %}

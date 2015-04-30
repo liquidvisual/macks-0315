@@ -1,0 +1,30 @@
+---
+layout: internal
+include_news: true
+---
+
+<br>
+
+{% for i in (1..4) %}
+<a href="/about/news/news-item/">
+	<article class="media-article">
+		<div class="row">
+			<div class="medium-4 columns show-for-medium-up">
+				<img src="http://lorempixel.com/360/190/nature?{{i}}">
+			</div>
+			<div class="medium-8 columns">
+				<h3>Flagstaff Proprietors</h3>
+				<p><date>Wednesday, February 18, 2015</date></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit
+				<span class="read-more" href="/about/news/news-item/">Read More &nbsp;<i class="fa fa-angle-right"></i></span>
+			</div>
+		</div>
+	</article>
+</a>
+<br><hr>
+{% endfor %}
+
+{% include snippets/pagination.html %}

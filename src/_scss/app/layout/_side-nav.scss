@@ -12,6 +12,10 @@
     list-style: none;
     margin: 0;
 
+    @media #{$devices-only} {
+        margin-bottom: rem-calc(20);
+    }
+
     > li {
         margin-bottom: rem-calc(5);
     }

@@ -40,6 +40,11 @@
     <div class="lv-super">
         <div class="lv-page">
 
+            <!-- CLIENT AREA BAR -->
+            {% if page.type == "client_area" %}
+                {% include client_area_bar.html %}
+            {% endif %}
+
             <!-- HEADER -->
             <header class="global-header">
                 {% include header.html %}
@@ -71,6 +76,9 @@
         {% include off_canvas_menu.html %}
     </nav>
 
+    <!-- MODALS -->
+    {% include modals.html %}
+
     <!--[if lt IE 9]>
     <div class="lv-alert lv-unselectable">
         <p>Your browser is out of date. Please <a href="http://outdatedbrowser.com">upgrade</a> to experience more of the web.</p>
@@ -86,6 +94,8 @@
     <script src="/_bower_components/jQuery.mmenu/src/js/jquery.mmenu.min.all.js"></script>
     <script src="/_bower_components/fastclick/lib/fastclick.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.abide.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="/_bower_components/nprogress/nprogress.js"></script>
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->

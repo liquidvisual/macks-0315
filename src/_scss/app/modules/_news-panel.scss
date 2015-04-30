@@ -8,7 +8,7 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// News Panel
+// News Panel (on the homepage hero and news item)
 //-----------------------------------------------------------------
 
 .news-panel {
@@ -17,15 +17,24 @@
     padding-bottom: rem-calc(30);
 
     .news-panel-inner {
-        padding: rem-calc(30);
+        padding: rem-calc(30 30 15 30);
         overflow: hidden;
+
+        @media #{$medium-up} {
+            padding: rem-calc(30 30 0 30);
+        }
+
+        @media #{$large-up} {
+            padding: rem-calc(30);
+        }
     }
 }
 
 //=========================================
-// Media Panel context
+// Media Panel context (hacky)
 //=========================================
 
+.sidebar .news-panel,
 .media-panel .news-panel {
     li {
         @media #{$devices-only} {
@@ -39,18 +48,33 @@
 //=========================================
 
 .lv-hero .news-panel {
+    padding-bottom: 0; // override news-item
+
     @media #{$large-up} {
         height: rem-calc(520);
         margin-top: 0;
+        overflow: hidden;
+    }
+
+    .button {
+        background: #DEDEDC;
+        margin-bottom: 0;
+        padding-bottom: rem-calc(20);
+
+        @media #{$large-up} {
+            // padding-top: rem-calc(30);
+        }
+
     }
 
     .news-panel-inner {
+
         @media #{$medium-up} {
-            max-height: rem-calc(170);
+            // max-height: rem-calc(200);
         }
 
         @media #{$large-up} {
-            max-height: rem-calc(420);
+            // max-height: rem-calc(420);
         }
     }
 }
@@ -86,6 +110,7 @@
 //=========================================
 
 .news-panel .button {
+    @include transition('color');
     background: none;
     padding-right: rem-calc(25);
     margin-bottom: rem-calc(10);;
@@ -94,6 +119,10 @@
     @media #{$large-up} {
         position: absolute;
         bottom: 0;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
 

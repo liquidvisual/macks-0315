@@ -132,6 +132,12 @@ $column-gutter: 15px !default;
 	color: white;
 }
 
+// Hovers
+.topbar > ul > li > a:hover {
+	background: $primary-color;
+	color: white;
+}
+
 //-----------------------------------------------------------------
 // Nested Dropdown
 //-----------------------------------------------------------------

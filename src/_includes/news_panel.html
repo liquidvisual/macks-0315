@@ -7,15 +7,15 @@
 		<h3>News</h3>
 		<ul class="block-list">
 			{% for item in news_entries | limit: max_entries %}
-				<li>
-					<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE -->
+				<li class="{% if forloop.index == 4 %} show-for-large-up {% endif %}">
+					<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE (65 chars max) -->
 					<article class="news-article">
 						<date>{{ item.date }}</date>
-						<a href="{{ item.url }}">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
+						<a href="/about/news/news-item/">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
 					</article>
 				</li>
 			{% endfor %}
 		</ul>
 	</div> <!-- .news-panel-inner -->
-	<a class="button expand text-right" href="#">More News</a>
+	<a class="button expand text-right" href="/about/news/">More News</a>
 </div> <!-- .news-panel -->

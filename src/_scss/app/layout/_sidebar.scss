@@ -11,6 +11,16 @@
 // Sidebar
 //-----------------------------------------------------------------
 
+.sidebar .feature-panels {
+	@media #{$devices-only} {
+	    margin-bottom: rem-calc(20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Sidebar
+//-----------------------------------------------------------------
+
 .sidebar .feature-panel {
 	background: $tertiary-color;
 	padding: rem-calc(20 20 0 20);

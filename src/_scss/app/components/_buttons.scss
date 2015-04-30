@@ -57,11 +57,32 @@
 //
 //=========================================
 
-.lv-super .special-download-button {
-	background: #0E5976;
-	border-color: #0E5976;
+.lv-super .global-footer .special-download-button {
+	position: relative;
+	@include transition('background-color, border-color');
+	background: #004D67;
+	border-color: #004D67;
 	width: auto;
 	padding: rem-calc(0 15);
+
+	&:hover {
+		@media #{$large-up} {
+		    background: darken(#004D67, 5%);
+		    border-color: darken(#004D67, 5%);
+		    color: white;
+		}
+	}
+
+	.fa-file {
+		font-size: rem-calc(20);
+		line-height: 0;
+		vertical-align: middle;
+		position: relative;
+		top: -4px;
+
+		// @media #{$small-only} {
+		// }
+	}
 
 	.text {
 		position: relative;
@@ -69,5 +90,6 @@
 		font-size: rem-calc(14);
 	}
 }
+
 
 

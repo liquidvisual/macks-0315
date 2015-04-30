@@ -26,6 +26,42 @@ html {
 }
 
 //-----------------------------------------------------------------
+// Client Area Bar (When logged in)
+//-----------------------------------------------------------------
+
+.client-area-bar {
+	// position: fixed;
+	// top: 0;
+	// width: 100%;
+	background: #37E2B3;
+	color: #29515D;
+	padding: rem-calc(12 0);
+
+	p, .button {
+		margin-bottom: rem-calc(5);
+		@media #{$medium-up} {
+		    margin: 0;
+		}
+	}
+
+	p {
+		margin-right: rem-calc(20);
+	}
+
+	.button {
+		position: relative;
+		top: -2px;
+		background: #30CAA1;
+		color: #29515D;
+		padding: rem-calc(5 10);
+	}
+
+	.log-out-button:after {
+		content: "";
+	}
+}
+
+//-----------------------------------------------------------------
 // Snap Grid
 //
 // Tells grid to "snap" into each breakpoint.

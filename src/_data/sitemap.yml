@@ -62,8 +62,8 @@
 - title: Contact
   url: /contact/
 
-- title: Client Login
-  url: "#client-login"
+#- title: Client Login
+ # url: "#client-login"
 
-- title: Join Newsletter
-  url: "#join-newsletter"
+#- title: Join Newsletter
+#  url: "#join-newsletter"

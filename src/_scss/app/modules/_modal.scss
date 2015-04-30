@@ -1,0 +1,62 @@
+/*
+    MODAL.CSS
+
+    - Last updated: 30.04.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Modal
+//-----------------------------------------------------------------
+
+.reveal-modal {
+	padding: rem-calc(30 0);
+
+	@media #{$medium-up} {
+	    padding: rem-calc(60 40 160 40);
+	}
+
+	h1, h2 {
+		text-transform: uppercase;
+		margin-bottom: rem-calc(20);
+	}
+
+	.alert-box {
+		margin-bottom: 0;
+
+		&.hide {
+			display: none; // override foundation (ugh)
+		}
+	}
+
+	.modal-body {
+		border-top: 1px solid #E3E3E3;
+		border-bottom: 1px solid #E3E3E3;
+		padding: rem-calc(30 0);
+		margin-bottom: rem-calc(20);
+	}
+
+	input,
+	.button {
+		height: rem-calc(44);
+		@media #{$medium-up} {
+			margin-bottom: 0;
+		}
+	}
+
+	.button {
+		background: #5693A8;
+		&:hover {
+			@media #{$large-up} {
+			    background: darken(#5693A8, 10%);
+			}
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================
+

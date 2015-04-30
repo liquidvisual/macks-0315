@@ -1,20 +1,13 @@
-{% assign stubbed_image_url = item.img_path %}
-{% assign img_path = "/img/content/media-tile-1.png" %}
-<!-- { % assign img_path = "http://lorempixel.com/610/260/business" %} -->
+{% assign imgpath = include.img_path %}
+{% assign title = include.title %}
+{% assign body = include.body %}
 
-<a class="media-tile image-tile" href="{{ item.url }}" style="background-image: url({{ img_path | prepend: site.assets }})">
+<a class="media-tile image-tile" href="{{ item.url }}" style="background-image: url('{{ img_path | prepend: site.assets }}')">
     <div class="text">
-        <h2>{{ "Title goes here" }}</h2>
-
-		<!-- Optional -->
-
+        <h2>{{ title }}</h2>
         <span class="desc">
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco."
+            {{ body }}
         </span>
-
-
     </div>
     <i class="fa fa-angle-right"></i>
-</a>
+</a> <!-- .media-tile -->

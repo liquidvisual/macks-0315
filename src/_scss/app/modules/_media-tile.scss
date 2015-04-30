@@ -2,7 +2,7 @@
 /*
     MEDIA-TILE.CSS
 
-    - updated: 04.12.14
+    - updated: 29.12.14
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -47,6 +47,7 @@ $light-grey: $light-grey;
 //=========================================
 
 .media-tile i {
+    @include transition('color');
     position: absolute;
     right: rem-calc(15);
     bottom: rem-calc(10); // needs to line up with text
@@ -60,6 +61,7 @@ $light-grey: $light-grey;
 //=========================================
 
 .media-tile .text {
+    @include transition('all 1000ms');
     position: absolute;
     bottom: 0;
     display: inline-block;
@@ -90,12 +92,13 @@ $light-grey: $light-grey;
         font-weight: normal;
         font-size: rem-calc(12);
 
-        max-height: rem-calc(50);
+
         // line-height: 2;
         overflow: hidden;
 
         @media #{$medium-up} {
             font-size: rem-calc(14);
+            max-height: rem-calc(56);
         }
     }
 
@@ -123,49 +126,57 @@ $light-grey: $light-grey;
     display: inline-block;
 }
 
-.no-touch .media-tile:hover {
-    // background: darken($midnight, 10%)
+// .no-touch .media-tile:hover {
+//     // background: darken($midnight, 10%)
+// }
+
+.media-tile:hover i {
+    @media #{$large-up} {
+        color: white;
+    }
 }
 
-.no-touch .media-tile:hover i {
-    color: white;
+.media-tile:hover .text {
+    @media #{$large-up} {
+        padding-bottom: rem-calc(20);
+    }
 }
 
 //=========================================
 // Media Tiles
 //=========================================
 
-.media-tiles-light {
-    .media-tile {
-        background: #EFEFEF;
+// .media-tiles-light {
+//     .media-tile {
+//         background: #EFEFEF;
 
-        .text h2 {
-            color: #404141;
-            font-size: rem-calc(20);
-        }
+//         .text h2 {
+//             color: #404141;
+//             font-size: rem-calc(20);
+//         }
 
-         .desc {
-            color: #404141;
-         }
+//          .desc {
+//             color: #404141;
+//          }
 
-        i {
-            color: #C8C7C7;
-        }
-    }
-}
+//         i {
+//             color: #C8C7C7;
+//         }
+//     }
+// }
 
 // Not sure why the JS library isn't picking this up
-.no-touch .media-tiles-light .media-tile:hover {
-    background: darken($light-grey, 40%);
+// .media-tiles-light .media-tile:hover {
+//     background: darken($light-grey, 40%);
 
-    .text h2 {
-        color: white;
-    }
+//     .text h2 {
+//         color: white;
+//     }
 
-    .desc {
-        color: white;
-    }
-}
+//     .desc {
+//         color: white;
+//     }
+// }
 
 /*  Bit of a hack */
 @media (max-width: 767px) {

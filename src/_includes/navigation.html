@@ -1,7 +1,7 @@
 <div class="topbar">
 	<ul>
 		<li><a href="/">Home</a></li>
-		<li class="active has-dropdown"><a href="/services/">Services</a>
+		<li class="{% include snippets/is_active.html current_path="services" %} has-dropdown"><a href="/services/">Services</a>
 			<ul class="dropdown mega row">
 				<li class="tint-1 medium-3 columns"><a href="#">Our Services</a>
 					<ul>
@@ -32,20 +32,13 @@
 				</li>
 			</ul>
 		</li>
-		<li class="has-dropdown"><a href="/about/">About</a>
+		<li class="{% include snippets/is_active.html current_path="about" %} has-dropdown"><a href="/about/">About</a>
 			<ul class="dropdown medium-block-grid-3">
 				<li><a href="/about/our-team/">Our Team</a></li>
 				<li><a href="/about/why-use-us/">Why Use Us?</a></li>
 				<li><a href="/about/news/">News</a></li>
 			</ul>
 		</li>
-		<li><a href="/contact/">Contact</a></li>
-		<!-- <li>
-		<ul class="social-networks">
-		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-		</ul>
-		</li> -->
+		<li class="{% include snippets/is_active.html current_path="contact" %}"><a href="/contact/">Contact</a></li>
 	</ul>
-	<!-- Social Networks -->
 </div>

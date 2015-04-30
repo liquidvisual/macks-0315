@@ -28,6 +28,14 @@
 	&:-ms-input-placeholder { text-align: right; }
 }
 
+.mmenu .search-form input {
+	color: white;
+	&::-webkit-input-placeholder { color: white; }
+	&:-moz-placeholder { color: white; }
+	&::-moz-placeholder { color: white; }
+	&:-ms-input-placeholder { color: white; }
+}
+
 //=========================================
 // Search Form
 //=========================================

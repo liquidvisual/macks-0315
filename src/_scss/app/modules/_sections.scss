@@ -12,9 +12,13 @@
 //-----------------------------------------------------------------
 
 .content {
-	padding-top: rem-calc(80);
+	padding-top: rem-calc(20);
 	padding-bottom: rem-calc(60);
-	background: #FBFBFB;
+	background: url(../img/template/content-bg.png) repeat-x;
+
+	@media #{$large-up} {
+	   padding-top: rem-calc(80);
+	}
 }
 
 .main {

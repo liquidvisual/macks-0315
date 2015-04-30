@@ -29,16 +29,6 @@
 		max-height: rem-calc(48);
 		padding-right: rem-calc(40);
 		overflow: hidden;
-
-		// &:after {
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	right: rem-calc(15);
-		// 	content: "\f105";
-		// 	font-size: rem-calc(30);
-		// 	font-family: "FontAwesome";
-		// 	line-height: 0;
-		// }
 	}
 }
 
@@ -54,12 +44,31 @@
 // Block List Contexts
 //-----------------------------------------------------------------
 
-.global-footer .block-list a:after {
-	color: rgba(255, 255, 255, 0.4)
+// Arrows special case for footer only
+.global-footer .block-list a {
+	display: block;
+
+	&:after {
+		@include transition('color');
+		color: rgba(255, 255, 255, 0.4);
+		position: absolute;
+		top: 50%;
+		right: rem-calc(15);
+		content: "\f105";
+		font-size: rem-calc(30);
+		font-family: "FontAwesome";
+		line-height: 0;
+	}
+
+	&:hover,
+	&:hover:after {
+		@media #{$medium-up} {
+		    color: white;
+		}
+	}
 }
 
 .lv-hero .block-list li {
-
 	@media #{$medium-only} {
 	    border-bottom: 0;
 	}
@@ -81,6 +90,7 @@ ul li {
 	margin-bottom: rem-calc(5);
 }
 
+.styled-list,
 .triangle-list {
 	list-style: none;
 	margin-left: 0;
@@ -103,6 +113,25 @@ ul li {
 
 	&[class*='block-grid'] li {
 		padding-bottom: 0; // Let list items set their own inner padding
+	}
+}
+
+//-----------------------------------------------------------------
+// Make sure this doesn't have nesting - or will break
+//-----------------------------------------------------------------
+
+.download-list li {
+	padding-left: rem-calc(26);
+	position: relative;
+
+	a:before {
+		position: absolute;
+		content: "\f1c1";
+		top: -6px;
+		left: 0;
+		color: #AFC3CC;
+		font-size: rem-calc(20);
+		font-weight: normal;
 	}
 }
 

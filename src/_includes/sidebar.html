@@ -2,44 +2,24 @@
 
     {% include snippets/side_nav_andr.html %}
 
-{% comment %}
-    {% if page.type == 'service_item' %}
-        <ul class="side-nav">
-            <li class="active"><a href="/services/">Services</a></li>
-            <li><a href="/services/practice-information/">Practice Information</a></li>
-            <li><a href="/services/industry/">Industry</a>
-                <ul>
-                    <li class="active"><a href="#">Agribusiness - Agriculture</a></li>
-                    <li><a href="#">Agribusiness - Viticulture</a></li>
-                    <li><a href="#">Aquaculture</a></li>
-                    <li><a href="#">Automotive</a></li>
-                    <li><a href="#">Beef &amp; Dairy</a></li>
-                    <li><a href="#">Building &amp; Construction</a></li>
-                    <li><a href="#">Transport</a></li>
-                </ul>
-            </li>
-        </ul>
-    {% else %}
-        <ul class="side-nav">
-            <li class="active"><a href="/about/">About</a></li>
-            <li><a href="/about/our-team/">Our Team</a></li>
-            <li><a href="/about/why-use-us/">Why Use Us?</a></li>
-            <li><a href="/about/news/">News</a></li>
-        </ul>
-    {% endif %}
-    {% endcomment %}
-
-    <div class="feature-panel">
-        <h4><i class="fa fa-comment"></i>&nbsp; Get in Touch</h4>
-        <p>Some text here about contacting Macks Advisory, and the link will lead to a form.</p>
-        <p class="text-right"><a class="button">Contact Us Today</a></p>
-    </div> <!-- .feature-panel -->
-
-    <div class="feature-panel">
-        <h4><i class="fa fa-envelope"></i>&nbsp; Newsletter</h4>
-        <p>Some text here about contacting Macks Advisory, and the link will lead to a form.</p>
-        <p class="text-right"><a class="button">Join</a></p>
-    </div> <!-- .feature-panel -->
+    <div class="feature-panels">
+        <div class="row">
+            <div class="medium-6 large-12 columns">
+                <div class="feature-panel">
+                    <h4><i class="fa fa-comment"></i>&nbsp; Get in Touch</h4>
+                    <p>Some text here about contacting Macks Advisory, and the link will lead to a form.</p>
+                    <p class="text-right"><a class="button">Contact Us Today</a></p>
+                </div> <!-- .feature-panel -->
+            </div>
+            <div class="medium-6 large-12 columns">
+                <div class="feature-panel">
+                    <h4><i class="fa fa-envelope"></i>&nbsp; Newsletter</h4>
+                    <p>Some text here about contacting Macks Advisory, and the link will lead to a form.</p>
+                    <p class="text-right"><a class="button">Join</a></p>
+                </div> <!-- .feature-panel -->
+            </div>
+        </div> <!-- .row -->
+    </div> <!-- .feature-panels -->
 
     {% if page.include_news %}
         {% include news_panel.html max_entries="3" %}

@@ -30,6 +30,16 @@ layout: master
             </main>
         </div>
         <div class="large-3 large-pull-9 columns">
+
+            {% if page.type == "client_area" %}
+                <ul class="side-nav">
+                    <li><a href="/">Company/Project Name Here</a></li>
+                    <li><a href="#">Another Page</a></li>
+                    <li class="active"><a href="#">Another Page</a></li>
+                    <li><a href="#">Another Page</a></li>
+                </ul>
+            {% endif %}
+
             {% include sidebar.html %}
         </div>
     </div>
