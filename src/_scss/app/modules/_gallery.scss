@@ -27,6 +27,15 @@
 	}
 }
 
+.gallery-listing a:not(.media-tile-simple) {
+	@include transition('color');
+	display: block;
+
+	&:hover h3 {
+		color: $primary-color;
+	}
+}
+
 //=========================================
 //
 //=========================================

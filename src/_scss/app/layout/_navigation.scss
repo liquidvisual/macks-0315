@@ -131,6 +131,10 @@ $column-gutter: 15px !default;
 	display: inline-block;
 	padding: rem-calc(10 0);
 	color: white;
+
+	&:hover {
+		color: lighten(#29A8E4, 20%);
+	}
 }
 
 // Hovers

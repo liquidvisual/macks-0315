@@ -54,6 +54,13 @@ html {
 		background: #30CAA1;
 		color: #29515D;
 		padding: rem-calc(5 10);
+
+		&:hover {
+			@media #{$medium-up} {
+			    background: darken(#30CAA1, 5%);
+			    color: white;
+			}
+		}
 	}
 
 	.log-out-button:after {

@@ -66,3 +66,12 @@
 //=========================================
 //
 //=========================================
+
+.lv-super .side-nav .button,
+.side-nav a {
+    &:hover {
+        @media #{$medium-up} {
+            background: darken($primary-color, 10%) !important;
+        }
+    }
+}

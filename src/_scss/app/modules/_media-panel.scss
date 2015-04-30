@@ -21,6 +21,13 @@
 		    width: 100%;
 		}
 	}
+
+	a:hover {
+		@include transition('color');
+		@media #{$medium-up} {
+		    color: darken($secondary-color, 10%);
+		}
+	}
 }
 
 .media-panel-content {

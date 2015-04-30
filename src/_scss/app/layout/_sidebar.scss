@@ -36,6 +36,12 @@
 		text-align: right;
 		background: $primary-color;
 		margin-bottom: 0;
+
+		&:hover {
+			@media #{$medium-up} {
+			    background: darken($primary-color, 10%);
+			}
+		}
 	}
 }
 

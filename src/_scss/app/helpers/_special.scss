@@ -29,5 +29,30 @@
 }
 
 //=========================================
-//
+// Some cheats with hovers
 //=========================================
+
+.media-article {
+	h3, .read-more, .lv-expander i {
+		@include transition('color');
+	}
+}
+
+a .media-article:hover {
+	@media #{$medium-up} {
+		.fa-angle-down, h3, .read-more {
+	    	// color: darken($primary-color, 10%);
+	    	color: $primary-color;
+	    }
+	}
+}
+
+.media-article.lv-expander.active,
+.media-article.lv-expander:hover {
+	@media #{$medium-up} {
+		i, h3, .read-more {
+	    	// color: darken($primary-color, 10%);
+	    	color: $primary-color;
+	    }
+	}
+}
