@@ -61,6 +61,7 @@ $column-gutter: 15px !default;
 	display: table-cell;
 }
 
+.topbar > ul > li > .anchor,
 .topbar > ul > li > a {
 	display: block;
 	line-height: rem-calc(40);
@@ -86,7 +87,7 @@ $column-gutter: 15px !default;
 //-----------------------------------------------------------------
 
 .topbar .has-dropdown:hover > a,
-.topbar .has-dropdown:hover > a {
+.topbar .has-dropdown:hover > .anchor {
 	background: $primary-color;
 	color: white;
 }
@@ -133,6 +134,7 @@ $column-gutter: 15px !default;
 }
 
 // Hovers
+.topbar > ul > li > .anchor:hover,
 .topbar > ul > li > a:hover {
 	background: $primary-color;
 	color: white;
@@ -179,6 +181,7 @@ $column-gutter: 15px !default;
 	visibility: visible;
 }
 
+.topbar .active > .anchor,
 .topbar .active > a {
 	background: $light-grey;
 }

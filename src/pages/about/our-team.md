@@ -1,5 +1,5 @@
 ---
-layout: internal/our-team
+layout: internal/our_team
 title: Our Team
 permalink: /about/our-team/
 side_nav_id: 2

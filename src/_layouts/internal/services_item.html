@@ -8,25 +8,25 @@ type: 'service_item'
 	<h2>Case Studies</h2>
 
 	{% for i in (1..4) %}
-	<article class="media-article">
-		<div class="row">
-			<div class="medium-4 columns show-for-medium-up">
-				<img src="http://lorempixel.com/360/190/nature?{{i}}">
-			</div>
-			<div class="medium-8 columns">
-				<h3>Flagstaff Proprietors</h3>
-				<p><strong class="subheader">Mortgagee in Possession</strong></p>
-				<p>Sizeable non-contiguous land holding of approx 8,000 acres of farm land around Burra, SA.</p>
-
-				<!-- Expander -->
-				<a class="lv-expander js-expander" href="#"><i class="fa fa-angle-up fa-angle-down"></i></a>
-				<div class="lv-expander-content hide">
-					{{ content }}
+		<article id="case-{{i}}" data-expander="case-{{i}}" class="media-article lv-expander">
+			<div class="row">
+				<div class="medium-4 columns show-for-medium-up">
+					<img src="http://lorempixel.com/360/190/nature?{{i}}">
 				</div>
+				<div class="medium-8 columns">
+					<h3>Flagstaff Proprietors</h3>
+					<p><strong class="subheader">Mortgagee in Possession</strong></p>
+					<p>Sizeable non-contiguous land holding of approx 8,000 acres of farm land around Burra, SA.</p>
 
+					<!-- Expander Content -->
+					<a class="lv-expander-arrow" href="#"><i class="fa fa-angle-up fa-angle-down"></i></a>
+					<div data-expander-content="case-{{i}}" class="hide">
+						{{ content }}
+					</div>
+
+				</div>
 			</div>
-		</div>
-	</article>
+		</article>
 	{% endfor %}
 
 </section> <!-- .media-articles -->

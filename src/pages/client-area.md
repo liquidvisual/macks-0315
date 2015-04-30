@@ -1,5 +1,5 @@
 ---
-layout: internal/client-area
+layout: internal/client_area
 title: Company / Project Name Here
 permalink: /client-area/
 back_title: Home

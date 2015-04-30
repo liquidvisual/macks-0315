@@ -71,7 +71,7 @@
 	// Optional
 	//=========================================
 
-	.lv-expander {
+	.lv-expander-arrow {
 	    position: absolute;
 	    top: -15px;
 	    right: 0;
@@ -82,4 +82,8 @@
 	        color: $primary-color;
 	    }
 	}
+}
+
+.lv-expander {
+	cursor: pointer;
 }
