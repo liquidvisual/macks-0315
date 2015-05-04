@@ -20,6 +20,10 @@
 	overflow: hidden;
 
 	.button {
+		@media #{$small-only} {
+		    margin-bottom: rem-calc(20);
+		}
+
 		@media #{$medium-up} {
 		    position: absolute;
 		    bottom: rem-calc(20);
