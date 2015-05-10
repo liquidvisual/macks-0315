@@ -56,3 +56,107 @@ a .media-article:hover {
 	    }
 	}
 }
+
+//-----------------------------------------------------------------
+// Jono Updates - refactor
+//-----------------------------------------------------------------
+
+/* homepage - hide 4th news item for medium only */
+@media only screen and (max-width: 64em) and (min-width: 40.063em) {
+    .lv-hero .news-panel ul>li:nth-of-type(4n) { display: none; }
+}
+
+.media-tile-simple {
+	height: 6.25rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .image-right img { width: 100% !important; }
+    .image-right { max-width: 50%; }
+    .three-pane-feature .text { overflow: inherit; } /* Make all home text visible */
+    .topbar .medium-block-grid-2 > li { width: 100%; list-style: none; } /* update the mega menu */
+    .gallery-listing > li h3 { font-size: 1.475rem; } /* increase font size */
+    .media-tile-simple { height: 10.25rem; }
+}
+
+.content-area a, .media-panel-content a , .reveal-modal a { color: #31C2F2; } /* make the links lighter */
+
+.media-panel-content  a:hover  { color: #148fc7; } /* make the article links consistent */
+.fa { display: inline; }/*prevent right-arrow icons from wrapping onto new line*/
+.content-area strong { color: #41545C; }
+.content-area > ul, .case-study > ul { padding-left: 15px; }
+.content-area > ul ul, .case-study > ul ul { padding-top: 8px; }
+.media-panel-content h4 { border-bottom: 1px solid #e1e1e1; }
+
+/* new page with a login, had to set this up in case they try to access a protected page directly  - http://macksadvisory.muchmedia.com.au/creditors/ */
+.content-form input[type=text], .content-form input[type=password] { max-width: 500px; }
+
+/* new page/markup for search results */
+.search-result { border-bottom: 1px solid #eee; padding: 15px 0; }
+.search-result p { padding-bottom: 10px; margin-bottom: 0 !important;}
+.search-result h2 { padding-bottom: 10px; margin-bottom: 0 !important; }
+.search-result:first-child { border-top: 1px solid #eee; }
+
+/* adjust the headings in wysiwyg content */
+.content-area h2 { font-weight: inherit !important; font-size: 1.2rem;}
+.content-area h2 { font-weight: inherit !important; }
+.content-area h3 { font-size: 1rem; }
+
+@media only screen and (min-width: 40.063em) {
+    .content-area h3 { font-size: 1.2rem; margin-bottom: 1.25rem; }
+    .content-area h2 { font-size: 1.5625rem; margin-bottom: 1.25rem; }
+}
+
+@media only screen and (min-width: 40.063em) {
+    h1 { max-width: 75%; } /* stop h1 from overlapping the back button */
+}
+
+@media only screen and (min-width: 90.063em) {
+    h1 { max-width: 83%; } /* stop h1 from overlapping the back button */
+}
+
+.news-article h1, .staff-name { font-weight: 700 !important; }
+.news-article a { display: inline; }
+
+/* extra class for padding the top of content pages */
+.pad-top { padding-top: 1.8rem; }
+
+ /* new page/markup for indicators - http://macksadvisory.muchmedia.com.au/services/practical-information/indicators-of-insolvency/ */
+.indicator-list { padding: 15px 0 40px; }
+.indicator-list p { border-bottom: 1px solid #e3e3e3; padding: 20px 10px; margin: 0; }
+.indicator-list p:first-child { border-top: 1px solid #e3e3e3;  }
+.indicator-list p i { color: #D8D7D7; font-size: 120%; }
+
+/* extra css for .Net form validators */
+.validation-summary-errors { padding: 0 .9375rem .9375rem .9375rem; }
+.validation-summary-errors  ul, .field-validation-error { font-size: .875rem; margin: 0; padding: 10px; background-color: #f04124; color: #fff; display: block; }
+.validation-summary-errors  ul { list-style: none; }
+.validation-summary-errors  li { margin: 0; padding: 0; }
+
+.media-tile-simple .text { text-align: right; }
+
+.image-list li p { margin-bottom: 0.45rem; }
+
+.medium-block-grid-2 date, .blog-list date { font-size: .75rem; }
+
+/* changed these list items to be 2 per row (instead of 3) */
+@media only screen and (min-width: 64.063em) {
+    .gallery-listing > li { width: 50%; }
+    .gallery-listing > li:nth-of-type(3n+1) { clear: none; }
+}
+
+/* mega-menu update */
+.topbar .dropdown { background: #126D9C; }
+
+.case-study h4, .case-study h3, .case-study h2 {
+  font-size: .875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: .625rem;
+  margin-bottom: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.case-study h2 em, .case-study h3 em, .case-study h4 em { font-style: normal; }
+.media-article.lv-expander:hover .case-study h3, .media-article.lv-expander:hover .case-study h2 { color: #006080; }
