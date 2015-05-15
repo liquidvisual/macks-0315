@@ -26,7 +26,7 @@ $("[data-expander]").each(function(e){
 
     // Activate on click too
     $this.click(function(e){
-        e.preventDefault();
+        // e.preventDefault();
         expander($this, $content, contentLabel);
     });
 });
