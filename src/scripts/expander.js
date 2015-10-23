@@ -1,5 +1,17 @@
 /*
     EXPANDER - Last updated: 30.04.15
+
+    Usage:
+
+    <div id="hello" data-expander="hello" class="lv-expander">
+        <h3>Title</h3>
+        <a class="lv-expander-arrow" href="#"><i class="fa fa-angle-up fa-angle-down"></i></a>
+
+        <!-- Expander Content -->
+        <div data-expander-content="hello" class="hide">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+    </div>
 */
 //-----------------------------------------------------------------
 // Variables
